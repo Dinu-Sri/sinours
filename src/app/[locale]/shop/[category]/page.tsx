@@ -5,7 +5,7 @@ import { ChevronRight } from "lucide-react";
 import type { Locale } from "@/i18n/routing";
 import { localeHref } from "@/lib/nav";
 import { slugToCategory, VALID_CATEGORY_SLUGS } from "@/lib/categories";
-import { PIGMENT_COLORS } from "@/lib/colors";
+import { PIGMENT_COLORS, type PigmentColor } from "@/lib/colors";
 import { getProducts } from "@/lib/products";
 import { ProductCard } from "@/components/product-card";
 
@@ -17,26 +17,37 @@ export async function generateStaticParams() {
 
 export default async function CategoryPage({
   params,
+  searchParams,
 }: {
   params: Promise<{ locale: string; category: string }>;
+  searchParams: Promise<{ color?: string }>;
 }) {
   const { locale, category } = await params;
+  const { color } = await searchParams;
   setRequestLocale(locale as Locale);
   const categoryEnum = slugToCategory(category);
   if (!categoryEnum) notFound();
+
+  const colorFamily = color && PIGMENT_COLORS.includes(color as PigmentColor)
+    ? (color as PigmentColor)
+    : null;
 
   const t = await getTranslations({ locale, namespace: "shop" });
   const tc = await getTranslations({ locale, namespace: "colors" });
 
   const products = await getProducts({
     category: categoryEnum,
+    colorFamily: colorFamily ?? undefined,
     locale: locale as Locale,
   });
   const base = localeHref(locale as Locale, "shop");
 
   const heading =
     categoryEnum === "PIGMENT"
-      ? tc("pigmentsShort" as never)
+      ? colorFamily
+        ? // @ts-expect-error dynamic color key
+          tc(color)
+        : tc("pigmentsShort" as never)
       : categoryEnum === "MEDIUM"
         ? tc("auxiliaryMedium" as never)
         : tc("watercolorSet" as never);
@@ -49,13 +60,22 @@ export default async function CategoryPage({
           {t("title")}
         </Link>
         <ChevronRight className="h-3 w-3" />
-        <span className="text-foreground">
+        <Link href={`${base}/${category}`} className="hover:text-foreground">
           {categoryEnum === "PIGMENT"
             ? tc("pigmentsShort" as never)
             : categoryEnum === "MEDIUM"
               ? tc("auxiliaryMedium" as never)
               : tc("watercolorSet" as never)}
-        </span>
+        </Link>
+        {colorFamily && (
+          <>
+            <ChevronRight className="h-3 w-3" />
+            <span className="text-foreground">
+              {/* @ts-expect-error dynamic color key */}
+              {tc(color)}
+            </span>
+          </>
+        )}
       </nav>
 
       <header className="mb-10">
@@ -80,8 +100,12 @@ export default async function CategoryPage({
                 {PIGMENT_COLORS.map((c) => (
                   <li key={c}>
                     <Link
-                      href={`${base}/${category}/${c}`}
-                      className="block rounded-md px-3 py-1.5 text-sm text-muted-foreground transition-colors hover:bg-surface-subtle hover:text-foreground"
+                      href={`${base}/${category}?color=${c}`}
+                      className={`block rounded-md px-3 py-1.5 text-sm transition-colors hover:bg-surface-subtle hover:text-foreground ${
+                        c === colorFamily
+                          ? "bg-surface-subtle font-medium text-foreground"
+                          : "text-muted-foreground"
+                      }`}
                     >
                       {/* @ts-expect-error dynamic color key */}
                       {tc(c)}
@@ -102,7 +126,7 @@ export default async function CategoryPage({
                   <Link
                     href={`${base}/${slug}`}
                     className={`block rounded-md px-3 py-1.5 text-sm transition-colors hover:bg-surface-subtle hover:text-foreground ${
-                      slug === category
+                      slug === category && !colorFamily
                         ? "bg-surface-subtle font-medium text-foreground"
                         : "text-muted-foreground"
                     }`}
