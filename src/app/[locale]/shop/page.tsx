@@ -5,6 +5,7 @@ import type { Locale } from "@/i18n/routing";
 import { localeHref } from "@/lib/nav";
 import { getProducts } from "@/lib/products";
 import { ProductCard } from "@/components/product-card";
+import { ImagePlaceholder } from "@/components/image-placeholder";
 
 export const dynamic = "force-dynamic";
 
@@ -17,6 +18,7 @@ export default async function ShopPage({
   setRequestLocale(locale as Locale);
   const t = await getTranslations({ locale, namespace: "shop" });
   const tc = await getTranslations({ locale, namespace: "categories" });
+  const ta = await getTranslations({ locale, namespace: "actions" });
 
   const featured = await getProducts({ locale: locale as Locale }).then((rows) =>
     rows.filter((r) => r.featured).slice(0, 6),
@@ -57,16 +59,24 @@ export default async function ShopPage({
             <Link
               key={c.href}
               href={c.href}
-              className="group flex flex-col justify-between rounded-2xl border border-border bg-surface p-8 transition-all hover:border-foreground hover:shadow-soft"
+              className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-surface transition-all hover:border-foreground hover:shadow-soft"
             >
-              <div>
-                <p className="eyebrow">{c.short}</p>
-                <h3 className="mt-2 text-2xl font-bold">{c.title}</h3>
+              <ImagePlaceholder
+                label={c.title}
+                hint={locale === "zh" ? "分类图" : "Category image"}
+                variant="landscape"
+                className="rounded-none border-0 border-b"
+              />
+              <div className="flex flex-col justify-between p-8">
+                <div>
+                  <p className="eyebrow">{c.short}</p>
+                  <h3 className="mt-2 text-2xl font-bold">{c.title}</h3>
+                </div>
+                <span className="mt-8 inline-flex items-center gap-2 text-sm font-medium">
+                  {ta("viewDetails")}
+                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </span>
               </div>
-              <span className="mt-8 inline-flex items-center gap-2 text-sm font-medium">
-                {t("viewDetails")}
-                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </span>
             </Link>
           ))}
         </div>

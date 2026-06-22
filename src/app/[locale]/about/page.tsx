@@ -1,6 +1,7 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { BarChart3, Database, ShieldCheck } from "lucide-react";
 import type { Locale } from "@/i18n/routing";
+import { ImagePlaceholder } from "@/components/image-placeholder";
 
 export default async function AboutPage({
   params,

@@ -3,6 +3,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ArrowRight, FlaskConical, Layers, Palette } from "lucide-react";
 import type { Locale } from "@/i18n/routing";
 import { localeHref } from "@/lib/nav";
+import { ImagePlaceholder } from "@/components/image-placeholder";
 
 export default async function HomePage({
   params,
@@ -43,7 +44,7 @@ export default async function HomePage({
     <>
       {/* HERO */}
       <section className="relative overflow-hidden border-b border-border">
-        <div className="container-content flex flex-col items-start justify-between gap-12 py-20 md:flex-row md:items-end md:py-32">
+        <div className="container-content grid gap-12 py-20 md:grid-cols-[1.1fr_1fr] md:items-end md:py-32">
           <div className="max-w-2xl">
             <p className="eyebrow">{t("heroEyebrow")}</p>
             <h1 className="mt-6 text-display-xl font-bold leading-[0.95]">
@@ -68,6 +69,11 @@ export default async function HomePage({
               </Link>
             </div>
           </div>
+          <ImagePlaceholder
+            label={locale === "zh" ? "主视觉图" : "Hero image"}
+            hint={locale === "zh" ? "1920×1080 · 工作室场景" : "1920×1080 · studio scene"}
+            variant="hero"
+          />
         </div>
       </section>
 
@@ -77,12 +83,15 @@ export default async function HomePage({
           <div>
             <p className="eyebrow">{t("storyEyebrow")}</p>
             <h2 className="mt-5 text-display-lg font-bold">{t("storyTitle")}</h2>
-          </div>
-          <div className="flex items-center">
-            <p className="text-lg leading-relaxed text-muted-foreground">
+            <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
               {t("storyBody")}
             </p>
           </div>
+          <ImagePlaceholder
+            label={locale === "zh" ? "研磨工艺" : "Milling process"}
+            hint={locale === "zh" ? "1200×900 · 工艺特写" : "1200×900 · process close-up"}
+            variant="landscape"
+          />
         </div>
       </section>
 

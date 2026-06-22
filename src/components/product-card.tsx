@@ -13,11 +13,10 @@ export function ProductCard({
   localeHrefBase: string;
 }) {
   const t = useTranslations("colors");
-  const colorLabel =
-    product.colorFamily && product.colorFamily in t.raw(product.colorFamily)
-      ? // @ts-expect-error dynamic key
-        t(product.colorFamily)
-      : null;
+  const colorLabel = product.colorFamily
+    ? // @ts-expect-error dynamic key
+      t(product.colorFamily)
+    : null;
 
   const href = `${localeHrefBase}/${categorySlug(product.category)}/${product.slug}`;
 
