@@ -1,0 +1,167 @@
+{
+  "brand": {
+    "name": "Sinours",
+    "tagline": "水彩",
+    "full": "Sinours 水彩"
+  },
+  "nav": {
+    "home": "首页",
+    "shop": "产品",
+    "about": "关于我们",
+    "contact": "联系我们",
+    "agents": "查找代理",
+    "menu": "菜单",
+    "close": "关闭"
+  },
+  "actions": {
+    "exploreShop": "浏览产品",
+    "findAgent": "查找代理",
+    "learnMore": "了解更多",
+    "viewDetails": "查看详情",
+    "viewAll": "查看全部",
+    "sendMessage": "发送信息",
+    "backToShop": "返回产品列表",
+    "getInTouch": "联系我们"
+  },
+  "home": {
+    "heroEyebrow": "艺术家级颜料",
+    "heroTitle": "为当代画家研磨的色彩。",
+    "heroSubtitle": "Sinours 为重视耐光性、透明度以及笔触手感的艺术家,精心研磨水彩颜料与媒介剂。",
+    "heroPrimary": "浏览产品",
+    "heroSecondary": "查找代理",
+    "storyEyebrow": "我们的故事",
+    "storyTitle": "由画家创造,为画家而生。",
+    "storyBody": "每一款 Sinours 色彩都由精选颜料粉手工研磨而成。我们测量真正重要的指标——耐光性、透明度、颗粒均匀度、覆盖力——并把数据公布在每一款产品上。",
+    "categoriesEyebrow": "产品系列",
+    "categoriesTitle": "三种方式找到属于你的色彩。",
+    "pigmentsDesc": "九大色系的单颜料水彩。",
+    "mediumsDesc": "改变颜料行为的修复与辅助媒介剂。",
+    "setsDesc": "为各种创作场景精心搭配的水彩与媒介剂套装。"
+  },
+  "categories": {
+    "pigments": "颜料",
+    "mediums": "媒介剂",
+    "sets": "套装",
+    "pigmentsShort": "单颜料色彩",
+    "mediumsShort": "颜料调节剂",
+    "setsShort": "精选合集"
+  },
+  "colors": {
+    "white": "白色",
+    "yellow": "黄色",
+    "orange": "橙色",
+    "red": "红色",
+    "purple": "紫色",
+    "blue": "蓝色",
+    "green": "绿色",
+    "black": "黑色",
+    "other": "其他颜色",
+    "pigmentsShort": "单颜料色彩",
+    "repairMedium": "水彩修复媒介剂",
+    "auxiliaryMedium": "水彩辅助媒介剂",
+    "watercolorSet": "水彩套装",
+    "mediumSet": "媒介剂套装"
+  },
+  "shop": {
+    "title": "产品",
+    "subtitle": "浏览完整的 Sinours 产品系列。本站不直接销售,请联系授权代理订购。",
+    "filters": "筛选",
+    "category": "类别",
+    "color": "颜色",
+    "all": "全部",
+    "results": "{count, plural, other {# 件产品}}",
+    "sortBy": "排序",
+    "sortFeatured": "推荐",
+    "sortName": "名称 A–Z",
+    "noResults": "没有符合筛选条件的产品。",
+    "browseCategories": "按类别浏览"
+  },
+  "product": {
+    "specifications": "规格参数",
+    "colorPowder": "颜料粉",
+    "lightResistance": "耐光性",
+    "transparency": "透明度",
+    "particleRegularity": "颗粒均匀度",
+    "coverage": "覆盖力",
+    "series": "系列",
+    "pigmentIndex": "颜料索引",
+    "findAgentToOrder": "本产品通过授权 Sinours 代理销售。",
+    "relatedProducts": "相关产品"
+  },
+  "about": {
+    "title": "关于 Sinours",
+    "subtitle": "一家建立在颜料科学之上、热爱这门手艺的水彩工坊。",
+    "companyTitle": "公司简介",
+    "companyBody": "Sinours 是一家专注于绘画材料的水彩制造商。我们自行研磨颜料粉、调配媒介剂,并公布每一款色彩背后的技术数据。我们服务于希望获得稳定、可长期保存作品的艺术家、插画师与教育工作者。",
+    "valuesTitle": "我们的坚持",
+    "values": {
+      "pigment": {
+        "title": "颜料优先",
+        "body": "我们标注并索引所用到的每一种颜料。没有神秘配方,没有捷径。"
+      },
+      "data": {
+        "title": "数据公开",
+        "body": "耐光性、透明度、颗粒均匀度与覆盖力均公布于每一款产品页面。"
+      },
+      "archive": {
+        "title": "经久耐用",
+        "body": "通过耐光性测试,确保今日之作百年之后依然如新。"
+      }
+    }
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "联系 Sinours 团队,或查找您附近的代理。",
+    "enterpriseTitle": "企业联系",
+    "agentTitle": "代理名录",
+    "formTitle": "给我们留言",
+    "formName": "您的姓名",
+    "formEmail": "邮箱",
+    "formSubject": "主题",
+    "formMessage": "留言内容",
+    "formSend": "发送信息",
+    "formSuccess": "感谢您——我们已收到您的信息,将尽快回复。",
+    "formError": "出错了,请重试或直接给我们发邮件。",
+    "emailLabel": "邮箱",
+    "phoneLabel": "电话",
+    "addressLabel": "地址",
+    "hoursLabel": "工作时间",
+    "hoursValue": "周一至周五 9:00–18:00 (GMT+8)"
+  },
+  "agents": {
+    "title": "查找代理",
+    "subtitle": "Sinours 通过授权代理网络销售。请直接联系当地代理订购或咨询库存。",
+    "all": "所有地区",
+    "region": "地区",
+    "contact": "联系人",
+    "email": "邮箱",
+    "phone": "电话",
+    "becomeAgent": "成为代理",
+    "becomeAgentBody": "有兴趣在您所在地区代理 Sinours?我们的网络正在扩展。联系我们,开启合作。"
+  },
+  "footer": {
+    "tagline": "为当代画家研磨的色彩。",
+    "shopCol": "产品",
+    "companyCol": "公司",
+    "supportCol": "支持",
+    "rights": "保留所有权利。",
+    "privacy": "隐私政策",
+    "terms": "使用条款",
+    "madeWith": "为画家而造。"
+  },
+  "theme": {
+    "toggle": "切换主题",
+    "light": "浅色",
+    "dark": "深色"
+  },
+  "language": {
+    "label": "语言",
+    "en": "English",
+    "zh": "中文"
+  },
+  "common": {
+    "loading": "加载中…",
+    "notFound": "找不到该页面。",
+    "backHome": "返回首页"
+  }
+}

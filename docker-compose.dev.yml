@@ -1,0 +1,23 @@
+# Sinours Watercolor — local dev helper.
+# Brings up only Postgres so the Next.js dev server runs on the host.
+# Usage:
+#   docker compose -f docker-compose.dev.yml up -d
+#   npm run dev
+#   docker compose -f docker-compose.dev.yml down
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: sinours-postgres-dev
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: sinours
+      POSTGRES_PASSWORD: sinours
+      POSTGRES_DB: sinours
+    ports:
+      - "5433:5432"
+    volumes:
+      - sinours_pgdata_dev:/var/lib/postgresql/data
+
+volumes:
+  sinours_pgdata_dev:

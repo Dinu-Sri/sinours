@@ -1,0 +1,167 @@
+{
+  "brand": {
+    "name": "Sinours",
+    "tagline": "Watercolor",
+    "full": "Sinours Watercolor"
+  },
+  "nav": {
+    "home": "Home",
+    "shop": "Shop",
+    "about": "About",
+    "contact": "Contact",
+    "agents": "Find Agent",
+    "menu": "Menu",
+    "close": "Close"
+  },
+  "actions": {
+    "exploreShop": "Explore the Shop",
+    "findAgent": "Find an Agent",
+    "learnMore": "Learn more",
+    "viewDetails": "View details",
+    "viewAll": "View all",
+    "sendMessage": "Send Message",
+    "backToShop": "Back to Shop",
+    "getInTouch": "Get in touch"
+  },
+  "home": {
+    "heroEyebrow": "Artists' Pigments",
+    "heroTitle": "Color, ground for the modern painter.",
+    "heroSubtitle": "Sinours crafts finely milled watercolor pigments and mediums for artists who care about lightfastness, transparency, and the feel of a brush on paper.",
+    "heroPrimary": "Explore the Shop",
+    "heroSecondary": "Find an Agent",
+    "storyEyebrow": "Our Story",
+    "storyTitle": "Made for painters, by painters.",
+    "storyBody": "Every Sinours color is milled from carefully selected pigment powders and bound by hand. We measure what matters — lightfastness, transparency, particle regularity, coverage — and publish the numbers on every product.",
+    "categoriesEyebrow": "The Collection",
+    "categoriesTitle": "Three ways to find your color.",
+    "pigmentsDesc": "Single-pigment watercolors across nine color families.",
+    "mediumsDesc": "Repair and auxiliary mediums that change how paint behaves.",
+    "setsDesc": "Curated watercolor and medium sets for every practice."
+  },
+  "categories": {
+    "pigments": "Pigments",
+    "mediums": "Mediums",
+    "sets": "Sets",
+    "pigmentsShort": "Single-pigment colors",
+    "mediumsShort": "Paint modifiers",
+    "setsShort": "Curated collections"
+  },
+  "colors": {
+    "white": "White",
+    "yellow": "Yellow",
+    "orange": "Orange",
+    "red": "Red",
+    "purple": "Purple",
+    "blue": "Blue",
+    "green": "Green",
+    "black": "Black",
+    "other": "Other Colors",
+    "pigmentsShort": "Single-pigment colors",
+    "repairMedium": "Watercolor Repair Medium",
+    "auxiliaryMedium": "Auxiliary Painting Medium",
+    "watercolorSet": "Watercolor Set",
+    "mediumSet": "Medium Set"
+  },
+  "shop": {
+    "title": "Shop",
+    "subtitle": "Browse the full Sinours collection. No purchase here — find an authorized agent to order.",
+    "filters": "Filters",
+    "category": "Category",
+    "color": "Color",
+    "all": "All",
+    "results": "{count, plural, =0 {No products} =1 {1 product} other {# products}}",
+    "sortBy": "Sort by",
+    "sortFeatured": "Featured",
+    "sortName": "Name A–Z",
+    "noResults": "No products match these filters.",
+    "browseCategories": "Browse by category"
+  },
+  "product": {
+    "specifications": "Specifications",
+    "colorPowder": "Color Powder",
+    "lightResistance": "Lightfastness",
+    "transparency": "Transparency",
+    "particleRegularity": "Particle Regularity",
+    "coverage": "Coverage",
+    "series": "Series",
+    "pigmentIndex": "Pigment Index",
+    "findAgentToOrder": "This product is available through authorized Sinours agents.",
+    "relatedProducts": "Related Products"
+  },
+  "about": {
+    "title": "About Sinours",
+    "subtitle": "A watercolor house built on pigment science and a love of the craft.",
+    "companyTitle": "The Company",
+    "companyBody": "Sinours is a watercolor manufacturer dedicated to the materials of painting. We mill our own pigment powders, formulate our own binders and mediums, and publish the technical data behind every color we make. Our work serves studio artists, illustrators, and educators who want predictable, archival results.",
+    "valuesTitle": "What we care about",
+    "values": {
+      "pigment": {
+        "title": "Pigment first",
+        "body": "We name and index every pigment we use. No mystery blends, no shortcuts."
+      },
+      "data": {
+        "title": "Published data",
+        "body": "Lightfastness, transparency, particle regularity and coverage are printed on every product page."
+      },
+      "archive": {
+        "title": "Built to last",
+        "body": "Tested for lightfastness so a painting made today reads the same in a hundred years."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Reach the Sinours team or find an agent near you.",
+    "enterpriseTitle": "Enterprise Contact",
+    "agentTitle": "Agent Directory",
+    "formTitle": "Send us a message",
+    "formName": "Your name",
+    "formEmail": "Email",
+    "formSubject": "Subject",
+    "formMessage": "Message",
+    "formSend": "Send Message",
+    "formSuccess": "Thanks — your message has been received. We'll reply shortly.",
+    "formError": "Something went wrong. Please try again or email us directly.",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "addressLabel": "Address",
+    "hoursLabel": "Hours",
+    "hoursValue": "Mon–Fri, 9:00–18:00 (GMT+8)"
+  },
+  "agents": {
+    "title": "Find an Agent",
+    "subtitle": "Sinours is sold through a network of authorized agents. Reach one directly to order or ask about availability.",
+    "all": "All regions",
+    "region": "Region",
+    "contact": "Contact",
+    "email": "Email",
+    "phone": "Phone",
+    "becomeAgent": "Become an Agent",
+    "becomeAgentBody": "Interested in representing Sinours in your region? We're growing our network. Get in touch and we'll start the conversation."
+  },
+  "footer": {
+    "tagline": "Color, ground for the modern painter.",
+    "shopCol": "Shop",
+    "companyCol": "Company",
+    "supportCol": "Support",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "madeWith": "Made for painters."
+  },
+  "theme": {
+    "toggle": "Toggle theme",
+    "light": "Light",
+    "dark": "Dark"
+  },
+  "language": {
+    "label": "Language",
+    "en": "English",
+    "zh": "中文"
+  },
+  "common": {
+    "loading": "Loading…",
+    "notFound": "We couldn't find that page.",
+    "backHome": "Back to home"
+  }
+}

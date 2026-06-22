@@ -1,0 +1,83 @@
+// Sinours Watercolor — Prisma schema
+// Phase 1 models: Product, Agent, ContactMessage.
+// Designed to extend cleanly into logins / ecommerce / agent self-service later.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+/// A pigment, medium, or set in the Sinours catalogue.
+/// Category + color family drive the shop filters; specs JSON holds the
+/// five pigment attributes (powder, lightfastness, transparency, particle
+/// regularity, coverage) that the client wants printed on every product.
+model Product {
+  id          String       @id @default(cuid())
+  slug        String       @unique
+  category    ProductCategory
+  /// Color family for pigments (e.g. "blue"). Null for mediums/sets.
+  colorFamily String?
+  nameEn      String
+  nameZh      String
+  shortDescEn String?
+  shortDescZh String?
+  /// Pigment index, e.g. "PB15". Null for non-pigment products.
+  pigmentIndex String?
+  series       String?
+  /// Image path under /public (placeholder until real photography).
+  image        String?
+  /// Translated specs: { en: {...}, zh: {...} }
+  specs        Json
+  featured     Boolean      @default(false)
+  sortOrder    Int          @default(0)
+  createdAt    DateTime     @default(now())
+  updatedAt    DateTime     @updatedAt
+
+  @@index([category, colorFamily])
+}
+
+/// Authorized regional distributor / reseller. Phase 1: read-only directory.
+/// Phase 2+: gains login, territory, order/commission views.
+model Agent {
+  id        String   @id @default(cuid())
+  name      String
+  region    String
+  country   String
+  contact   String?
+  email     String?
+  phone     String?
+  website   String?
+  /// Latitude/longitude placeholder for a future map view.
+  lat       Float?
+  lng       Float?
+  active    Boolean  @default(true)
+  sortOrder Int      @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([region])
+  @@index([country])
+}
+
+/// Inbound messages from the Contact form. Phase 1: stored only, no email.
+model ContactMessage {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  subject   String?
+  message   String
+  locale    String?
+  createdAt DateTime @default(now())
+
+  @@index([createdAt])
+}
+
+enum ProductCategory {
+  PIGMENT
+  MEDIUM
+  SET
+}

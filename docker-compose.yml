@@ -1,0 +1,65 @@
+# Sinours Watercolor — production stack.
+# Used by Portainer. Mirrors the Todo App layout: app + postgres + cloudflared tunnel.
+# Host port 3222.
+#
+# Required env (set in Portainer stack vars, raw values — no quotes):
+#   DB_PASSWORD          - postgres password
+#   CF_TUNNEL_TOKEN      - Cloudflare tunnel token (maps sinours.clossyan.com -> app:3000)
+#   APP_URL              - https://sinours.clossyan.com
+#   NEXT_PUBLIC_BASE_URL - https://sinours.clossyan.com
+
+services:
+  app:
+    image: ghcr.io/dinu-sri/sinours-app:latest
+    container_name: sinours-app
+    restart: unless-stopped
+    ports:
+      - "3222:3000"
+    environment:
+      - NODE_ENV=production
+      - NEXT_PUBLIC_BASE_URL=${NEXT_PUBLIC_BASE_URL}
+      - APP_URL=${APP_URL}
+      - DB_PASSWORD=${DB_PASSWORD:?DB_PASSWORD_is_required}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - sinours-net
+
+  postgres:
+    image: postgres:16-alpine
+    container_name: sinours-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: sinours
+      POSTGRES_PASSWORD: ${DB_PASSWORD:?DB_PASSWORD_is_required}
+      POSTGRES_DB: sinours
+    volumes:
+      - sinours_postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U sinours"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - sinours-net
+
+  tunnel:
+    image: cloudflare/cloudflared:latest
+    container_name: sinours-tunnel
+    command: tunnel run
+    environment:
+      - TUNNEL_TOKEN=${CF_TUNNEL_TOKEN:?CF_TUNNEL_TOKEN_is_required}
+    depends_on:
+      - app
+    restart: unless-stopped
+    networks:
+      - sinours-net
+
+volumes:
+  sinours_postgres_data:
+    name: sinours-postgres-data
+
+networks:
+  sinours-net:
+    driver: bridge
