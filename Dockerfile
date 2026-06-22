@@ -54,8 +54,8 @@ RUN chmod +x ./entrypoint.sh && chown nextjs:nodejs ./entrypoint.sh
 
 USER nextjs
 
-EXPOSE 3000
-ENV PORT=3000
+EXPOSE 3223
+ENV PORT=3223
 ENV HOSTNAME="0.0.0.0"
 
 CMD ["sh", "entrypoint.sh"]

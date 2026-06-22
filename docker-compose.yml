@@ -14,7 +14,7 @@ services:
     container_name: sinours-app
     restart: unless-stopped
     ports:
-      - "3222:3000"
+      - "3222:3223"
     environment:
       - NODE_ENV=production
       - NEXT_PUBLIC_BASE_URL=${NEXT_PUBLIC_BASE_URL}

@@ -1,7 +1,7 @@
 # Sinours Watercolor — Deployment Guide
 
 **Live URL:** https://sinours.clossyan.com
-**Host port:** 3222 → container 3000
+**Host port:** 3222 → container 3223
 **Image:** `ghcr.io/dinu-sri/sinours-app:latest`
 
 ---
@@ -12,12 +12,12 @@
 GitHub (push to master)
   → GitHub Actions builds Docker image → pushes to GHCR
     → Portainer pulls image via docker-compose stack
-      → sinours-app (Next.js, standalone, port 3000)
+      → sinours-app (Next.js, standalone, port 3223)
       → sinours-postgres (Postgres 16, healthchecked)
       → sinours-tunnel  (Cloudflare tunnel → sinours.clossyan.com)
 ```
 
-The Cloudflare tunnel connects `sinours.clossyan.com` directly to the `app` container on port 3000 (internal Docker networking). The host-level port 3222 is available for direct access or debugging.
+The Cloudflare tunnel connects `sinours.clossyan.com` directly to the `app` container on port 3223 (internal Docker networking). The host-level port 3222 is available for direct access or debugging.
 
 ---
 
@@ -25,7 +25,7 @@ The Cloudflare tunnel connects `sinours.clossyan.com` directly to the `app` cont
 
 1. **Portainer** running on your VPS.
 2. **GitHub Container Registry (GHCR)** access — add the `GHCR_TOKEN` secret in Portainer (or use a PAT with `read:packages` scope).
-3. **Cloudflare Tunnel** — create a tunnel in the Cloudflare Zero Trust dashboard, set the public hostname to `sinours.clossyan.com` pointing to `app:3000`. Copy the tunnel token.
+3. **Cloudflare Tunnel** — create a tunnel in the Cloudflare Zero Trust dashboard, set the public hostname to `sinours.clossyan.com` pointing to `app:3223`. Copy the tunnel token.
 
 ---
 
@@ -120,7 +120,7 @@ Go to **GitHub → Settings → Secrets and variables → Actions → Variables*
 4. **Public hostname** tab → add:
    - **Subdomain:** `sinours`
    - **Domain:** `clossyan.com`
-   - **Service:** `http://app:3000` (internal Docker name).
+   - **Service:** `http://app:3223` (internal Docker name).
 5. Copy the tunnel token and set it as `CF_TUNNEL_TOKEN` in Portainer.
 
 ---
@@ -188,6 +188,6 @@ App runs at `http://localhost:3000`.
 
 | Service             | Host Port | Container Port | Notes                          |
 | ------------------- | --------- | -------------- | ------------------------------ |
-| sinours-app         | 3222      | 3000           | Next.js standalone            |
+| sinours-app         | 3222      | 3223           | Next.js standalone            |
 | sinours-postgres    | —         | 5432           | Internal only (no host port)  |
 | sinours-tunnel      | —         | —              | Outbound tunnel to Cloudflare |
