@@ -7,10 +7,10 @@ FROM node:20-alpine AS base
 
 # ---- deps ----
 FROM base AS deps
-RUN apk add --no-cache libc6-compat
+RUN apk add --no-cache libc6-compat python3 make g++
 WORKDIR /app
 COPY package*.json ./
-RUN npm install --no-audit --no-fund --legacy-peer-deps
+RUN npm ci --no-audit --no-fund
 
 # ---- builder ----
 FROM base AS builder
