@@ -16,16 +16,20 @@ else
 fi
 
 echo "Applying database migrations..."
-if ! node node_modules/prisma/build/index.js migrate deploy 2>&1; then
-  echo "Migration deploy failed — checking for stuck migrations..."
-  FAILED_MIGRATION=$(node node_modules/prisma/build/index.js migrate status 2>&1 | grep "failed migration" | head -1 | sed 's/.*failed migration: //' | sed 's/ .*//' || echo "")
+MIGRATE_OUTPUT=$(node node_modules/prisma/build/index.js migrate deploy 2>&1) || {
+  echo "$MIGRATE_OUTPUT"
+  echo "Migration failed — attempting to resolve and retry..."
+  # Extract migration name from error: The `XXXXXXXX_name` migration
+  FAILED_MIGRATION=$(echo "$MIGRATE_OUTPUT" | grep -o '`[0-9]\{14\}_[a-z_]*`' | head -1 | tr -d '`' || echo "")
   if [ -n "$FAILED_MIGRATION" ]; then
-    echo "Resolving stuck migration: $FAILED_MIGRATION"
+    echo "Resolving: $FAILED_MIGRATION"
     node node_modules/prisma/build/index.js migrate resolve --rolled-back "$FAILED_MIGRATION" 2>&1 || true
-    echo "Retrying migration deploy..."
+    echo "Retrying deploy..."
     node node_modules/prisma/build/index.js migrate deploy 2>&1
+  else
+    echo "Could not determine failed migration name. If this persists, delete the postgres volume and redeploy."
   fi
-fi
+}
 
 echo "Seeding catalogue (idempotent)..."
 # Re-run the seed; it wipes and recreates Product/Agent rows so it is safe to repeat.
