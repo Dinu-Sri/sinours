@@ -16,7 +16,16 @@ else
 fi
 
 echo "Applying database migrations..."
-node node_modules/prisma/build/index.js migrate deploy
+if ! node node_modules/prisma/build/index.js migrate deploy 2>&1; then
+  echo "Migration deploy failed — checking for stuck migrations..."
+  FAILED_MIGRATION=$(node node_modules/prisma/build/index.js migrate status 2>&1 | grep "failed migration" | head -1 | sed 's/.*failed migration: //' | sed 's/ .*//' || echo "")
+  if [ -n "$FAILED_MIGRATION" ]; then
+    echo "Resolving stuck migration: $FAILED_MIGRATION"
+    node node_modules/prisma/build/index.js migrate resolve --rolled-back "$FAILED_MIGRATION" 2>&1 || true
+    echo "Retrying migration deploy..."
+    node node_modules/prisma/build/index.js migrate deploy 2>&1
+  fi
+fi
 
 echo "Seeding catalogue (idempotent)..."
 # Re-run the seed; it wipes and recreates Product/Agent rows so it is safe to repeat.
