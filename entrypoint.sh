@@ -16,7 +16,7 @@ else
 fi
 
 echo "Applying database migrations..."
-npx prisma migrate deploy
+node node_modules/prisma/build/index.js migrate deploy
 
 echo "Seeding catalogue (idempotent)..."
 # Re-run the seed; it wipes and recreates Product/Agent rows so it is safe to repeat.
