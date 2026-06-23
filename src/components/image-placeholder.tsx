@@ -35,7 +35,7 @@ export function ImagePlaceholder({
 }) {
   const aspect =
     variant === "hero"
-      ? "aspect-[16/9]"
+      ? "" // hero fills its column height — no fixed aspect ratio
       : variant === "square"
         ? "aspect-square"
         : variant === "portrait"
@@ -49,6 +49,7 @@ export function ImagePlaceholder({
       className={cn(
         "relative flex w-full flex-col items-center justify-center overflow-hidden rounded-2xl border-2 border-dashed border-border bg-surface-subtle text-muted-foreground",
         aspect,
+        variant === "hero" && "h-full min-h-[420px]",
         className,
       )}
       role="img"

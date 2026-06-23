@@ -44,8 +44,9 @@ export default async function HomePage({
     <>
       {/* HERO */}
       <section className="relative overflow-hidden border-b border-border">
-        <div className="container-content grid gap-12 py-20 md:grid-cols-[1.1fr_1fr] md:items-end md:py-32">
-          <div className="max-w-2xl">
+        <div className="container-content grid items-stretch gap-12 py-20 md:grid-cols-[1.1fr_1fr] md:py-28">
+          {/* Text column — vertically centered against the image */}
+          <div className="flex max-w-2xl flex-col justify-center">
             <p className="eyebrow">{t("heroEyebrow")}</p>
             <h1 className="mt-6 text-display-xl font-bold leading-[0.95]">
               {t("heroTitle")}
@@ -69,11 +70,15 @@ export default async function HomePage({
               </Link>
             </div>
           </div>
-          <ImagePlaceholder
-            label={locale === "zh" ? "主视觉图" : "Hero image"}
-            hint={locale === "zh" ? "1920×1080 · 工作室场景" : "1920×1080 · studio scene"}
-            variant="hero"
-          />
+          {/* Image column — fills the full height of the row */}
+          <div className="min-h-[360px] md:min-h-[520px]">
+            <ImagePlaceholder
+              label={locale === "zh" ? "主视觉图" : "Hero image"}
+              hint={locale === "zh" ? "1920×1080 · 工作室场景" : "1920×1080 · studio scene"}
+              variant="hero"
+              className="h-full"
+            />
+          </div>
         </div>
       </section>
 
