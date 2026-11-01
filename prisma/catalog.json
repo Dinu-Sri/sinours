@@ -1,0 +1,1433 @@
+{
+  "pigments": [
+    {
+      "slug": "211-nickel-antimony-titanium-yellow",
+      "code": "211",
+      "series": "S3",
+      "colorFamily": "yellow",
+      "nameEn": "Nickel Antimony Titanium Yellow",
+      "nameZh": "镍锑钛黄",
+      "pigmentIndex": "PY53",
+      "featured": false,
+      "sortOrder": 211,
+      "image": "/colors/211.webp",
+      "shortDescEn": "Professional watercolour 211. Offered as a 15 ml tube, a 3.8 ml full pan, and a 1.8 ml half pan.",
+      "shortDescZh": "专业水彩 211。提供 15 ml 管装、3.8 ml 全块和 1.8 ml 半块。",
+      "formats": [
+        {
+          "id": "tube",
+          "size": "15 ml",
+          "sku": "S10352211"
+        },
+        {
+          "id": "fullPan",
+          "size": "3.8 ml",
+          "sku": "S10350211"
+        },
+        {
+          "id": "halfPan",
+          "size": "1.8 ml",
+          "sku": "S10351211"
+        }
+      ]
+    },
+    {
+      "slug": "212-zinc-iron-yellow",
+      "code": "212",
+      "series": "S3",
+      "colorFamily": "yellow",
+      "nameEn": "Zinc Iron Yellow",
+      "nameZh": "锌铁黄",
+      "pigmentIndex": "PY119",
+      "featured": false,
+      "sortOrder": 212,
+      "image": "/colors/212.webp",
+      "shortDescEn": "Professional watercolour 212. Offered as a 15 ml tube, a 3.8 ml full pan, and a 1.8 ml half pan.",
+      "shortDescZh": "专业水彩 212。提供 15 ml 管装、3.8 ml 全块和 1.8 ml 半块。",
+      "formats": [
+        {
+          "id": "tube",
+          "size": "15 ml",
+          "sku": "S10352212"
+        },
+        {
+          "id": "fullPan",
+          "size": "3.8 ml",
+          "sku": "S10350212"
+        },
+        {
+          "id": "halfPan",
+          "size": "1.8 ml",
+          "sku": "S10351212"
+        }
+      ]
+    },
+    {
+      "slug": "222-titanium-chrome-yellow",
+      "code": "222",
+      "series": "S3",
+      "colorFamily": "yellow",
+      "nameEn": "Titanium Chrome Yellow",
+      "nameZh": "钛铬黄",
+      "pigmentIndex": null,
+      "featured": false,
+      "sortOrder": 222,
+      "image": null,
+      "shortDescEn": "Professional watercolour 222. Offered as a 15 ml tube, a 3.8 ml full pan, and a 1.8 ml half pan.",
+      "shortDescZh": "专业水彩 222。提供 15 ml 管装、3.8 ml 全块和 1.8 ml 半块。",
+      "formats": [
+        {
+          "id": "tube",
+          "size": "15 ml",
+          "sku": "S10352222"
+        },
+        {
+          "id": "fullPan",
+          "size": "3.8 ml",
+          "sku": "S10350222"
+        },
+        {
+          "id": "halfPan",
+          "size": "1.8 ml",
+          "sku": "S10351222"
+        }
+      ]
+    },
+    {
+      "slug": "236-light-cadmium-lemon-yellow",
+      "code": "236",
+      "series": "S3",
+      "colorFamily": "yellow",
+      "nameEn": "Light Cadmium Lemon Yellow",
+      "nameZh": "浅镉柠檬黄",
+      "pigmentIndex": null,
+      "featured": true,
+      "sortOrder": 236,
+      "image": "/colors/236.webp",
+      "shortDescEn": "Professional watercolour 236. Offered as a 15 ml tube, a 3.8 ml full pan, and a 1.8 ml half pan.",
+      "shortDescZh": "专业水彩 236。提供 15 ml 管装、3.8 ml 全块和 1.8 ml 半块。",
+      "formats": [
+        {
+          "id": "tube",
+          "size": "15 ml",
+          "sku": "S10352236"
+        },
+        {
+          "id": "fullPan",
+          "size": "3.8 ml",
+          "sku": "S10350236"
+        },
+        {
+          "id": "halfPan",
+          "size": "1.8 ml",
+          "sku": "S10351236"
+        }
+      ]
+    },
+    {
+      "slug": "267-iron-oxide-yellow-l",
+      "code": "267",
+      "series": "S1",
+      "colorFamily": "yellow",
+      "nameEn": "Iron Oxide Yellow (L)",
+      "nameZh": "氧化铁黄 (L)",
+      "pigmentIndex": null,
+      "featured": false,
+      "sortOrder": 267,
+      "image": "/colors/267.webp",
+      "shortDescEn": "Professional watercolour 267. Offered as a 15 ml tube, a 3.8 ml full pan, and a 1.8 ml half pan.",
+      "shortDescZh": "专业水彩 267。提供 15 ml 管装、3.8 ml 全块和 1.8 ml 半块。",
+      "formats": [
+        {
+          "id": "tube",
+          "size": "15 ml",
+          "sku": "S10352267"
+        },
+        {
+          "id": "fullPan",
+          "size": "3.8 ml",
+          "sku": "S10350267"
+        },
+        {
+          "id": "halfPan",
+          "size": "1.8 ml",
+          "sku": "S10351267"
+        }
+      ]
+    },
+    {
+      "slug": "301-light-permanent-orange",
+      "code": "301",
+      "series": "S2",
+      "colorFamily": "orange",
+      "nameEn": "Light Permanent Orange",
+      "nameZh": "浅永久橙",
+      "pigmentIndex": "PO16",
+      "featured": false,
+      "sortOrder": 301,
+      "image": null,
+      "shortDescEn": "Professional watercolour 301. Offered as a 15 ml tube, a 3.8 ml full pan, and a 1.8 ml half pan.",
+      "shortDescZh": "专业水彩 301。提供 15 ml 管装、3.8 ml 全块和 1.8 ml 半块。",
+      "formats": [
+        {
+          "id": "tube",
+          "size": "15 ml",
+          "sku": "S10352301"
+        },
+        {
+          "id": "fullPan",
+          "size": "3.8 ml",
+          "sku": "S10350301"
+        },
+        {
+          "id": "halfPan",
+          "size": "1.8 ml",
+          "sku": "S10351301"
+        }
+      ]
+    },
+    {
+      "slug": "307-light-cadmium-orange",
+      "code": "307",
+      "series": "S4",
+      "colorFamily": "orange",
+      "nameEn": "Light Cadmium Orange",
+      "nameZh": "浅镉橙",
+      "pigmentIndex": "PO20",
+      "featured": true,
+      "sortOrder": 307,
+      "image": "/colors/307.webp",
+      "shortDescEn": "Professional watercolour 307. Offered as a 15 ml tube, a 3.8 ml full pan, and a 1.8 ml half pan.",
+      "shortDescZh": "专业水彩 307。提供 15 ml 管装、3.8 ml 全块和 1.8 ml 半块。",
+      "formats": [
+        {
+          "id": "tube",
+          "size": "15 ml",
+          "sku": "S10352307"
+        },
+        {
+          "id": "fullPan",
+          "size": "3.8 ml",
+          "sku": "S10350307"
+        },
+        {
+          "id": "halfPan",
+          "size": "1.8 ml",
+          "sku": "S10351307"
+        }
+      ]
+    },
+    {
+      "slug": "321-iron-oxide-orange-l",
+      "code": "321",
+      "series": "S1",
+      "colorFamily": "orange",
+      "nameEn": "Iron Oxide Orange (L)",
+      "nameZh": "氧化铁橙 (L)",
+      "pigmentIndex": null,
+      "featured": false,
+      "sortOrder": 321,
+      "image": "/colors/321.webp",
+      "shortDescEn": "Professional watercolour 321. Offered as a 15 ml tube, a 3.8 ml full pan, and a 1.8 ml half pan.",
+      "shortDescZh": "专业水彩 321。提供 15 ml 管装、3.8 ml 全块和 1.8 ml 半块。",
+      "formats": [
+        {
+          "id": "tube",
+          "size": "15 ml",
+          "sku": "S10352321"
+        },
+        {
+          "id": "fullPan",
+          "size": "3.8 ml",
+          "sku": "S10350321"
+        },
+        {
+          "id": "halfPan",
+          "size": "1.8 ml",
+          "sku": "S10351321"
+        }
+      ]
+    },
+    {
+      "slug": "405-quinacridone-magenta",
+      "code": "405",
+      "series": "S2",
+      "colorFamily": "red",
+      "nameEn": "Quinacridone Magenta",
+      "nameZh": "喹吖啶酮品红",
+      "pigmentIndex": "PR122",
+      "featured": true,
+      "sortOrder": 405,
+      "image": "/colors/405.webp",
+      "shortDescEn": "Professional watercolour 405. Offered as a 15 ml tube, a 3.8 ml full pan, and a 1.8 ml half pan.",
+      "shortDescZh": "专业水彩 405。提供 15 ml 管装、3.8 ml 全块和 1.8 ml 半块。",
+      "formats": [
+        {
+          "id": "tube",
+          "size": "15 ml",
+          "sku": "S10352405"
+        },
+        {
+          "id": "fullPan",
+          "size": "3.8 ml",
+          "sku": "S10350405"
+        },
+        {
+          "id": "halfPan",
+          "size": "1.8 ml",
+          "sku": "S10351405"
+        }
+      ]
+    },
+    {
+      "slug": "418-molybdate-orange",
+      "code": "418",
+      "series": "S4",
+      "colorFamily": "orange",
+      "nameEn": "Molybdate Orange",
+      "nameZh": "钼铬橙",
+      "pigmentIndex": "PR104",
+      "featured": false,
+      "sortOrder": 418,
+      "image": "/colors/418.webp",
+      "shortDescEn": "Professional watercolour 418. Offered as a 15 ml tube, a 3.8 ml full pan, and a 1.8 ml half pan.",
+      "shortDescZh": "专业水彩 418。提供 15 ml 管装、3.8 ml 全块和 1.8 ml 半块。",
+      "formats": [
+        {
+          "id": "tube",
+          "size": "15 ml",
+          "sku": "S10352418"
+        },
+        {
+          "id": "fullPan",
+          "size": "3.8 ml",
+          "sku": "S10350418"
+        },
+        {
+          "id": "halfPan",
+          "size": "1.8 ml",
+          "sku": "S10351418"
+        }
+      ]
+    },
+    {
+      "slug": "421-pure-spanish-laterite",
+      "code": "421",
+      "series": "S3",
+      "colorFamily": "red",
+      "nameEn": "Pure Spanish Laterite",
+      "nameZh": "纯西班牙红土",
+      "pigmentIndex": null,
+      "featured": false,
+      "sortOrder": 421,
+      "image": "/colors/421.webp",
+      "shortDescEn": "Professional watercolour 421. Offered as a 15 ml tube, a 3.8 ml full pan, and a 1.8 ml half pan.",
+      "shortDescZh": "专业水彩 421。提供 15 ml 管装、3.8 ml 全块和 1.8 ml 半块。",
+      "formats": [
+        {
+          "id": "tube",
+          "size": "15 ml",
+          "sku": "S10352421"
+        },
+        {
+          "id": "fullPan",
+          "size": "3.8 ml",
+          "sku": "S10350421"
+        },
+        {
+          "id": "halfPan",
+          "size": "1.8 ml",
+          "sku": "S10351421"
+        }
+      ]
+    },
+    {
+      "slug": "425-permanent-rose",
+      "code": "425",
+      "series": "S2",
+      "colorFamily": "red",
+      "nameEn": "Permanent Rose",
+      "nameZh": "永久玫瑰红",
+      "pigmentIndex": null,
+      "featured": false,
+      "sortOrder": 425,
+      "image": "/colors/425.webp",
+      "shortDescEn": "Professional watercolour 425. Offered as a 15 ml tube, a 3.8 ml full pan, and a 1.8 ml half pan.",
+      "shortDescZh": "专业水彩 425。提供 15 ml 管装、3.8 ml 全块和 1.8 ml 半块。",
+      "formats": [
+        {
+          "id": "tube",
+          "size": "15 ml",
+          "sku": "S10352425"
+        },
+        {
+          "id": "fullPan",
+          "size": "3.8 ml",
+          "sku": "S10350425"
+        },
+        {
+          "id": "halfPan",
+          "size": "1.8 ml",
+          "sku": "S10351425"
+        }
+      ]
+    },
+    {
+      "slug": "428-ferrochrome-red",
+      "code": "428",
+      "series": "S3",
+      "colorFamily": "red",
+      "nameEn": "Ferrochrome Red",
+      "nameZh": "铁铬红",
+      "pigmentIndex": null,
+      "featured": false,
+      "sortOrder": 428,
+      "image": "/colors/428.webp",
+      "shortDescEn": "Professional watercolour 428. Offered as a 15 ml tube, a 3.8 ml full pan, and a 1.8 ml half pan.",
+      "shortDescZh": "专业水彩 428。提供 15 ml 管装、3.8 ml 全块和 1.8 ml 半块。",
+      "formats": [
+        {
+          "id": "tube",
+          "size": "15 ml",
+          "sku": "S10352428"
+        },
+        {
+          "id": "fullPan",
+          "size": "3.8 ml",
+          "sku": "S10350428"
+        },
+        {
+          "id": "halfPan",
+          "size": "1.8 ml",
+          "sku": "S10351428"
+        }
+      ]
+    },
+    {
+      "slug": "430-medium-cadmium-red",
+      "code": "430",
+      "series": "S5",
+      "colorFamily": "red",
+      "nameEn": "Medium Cadmium Red",
+      "nameZh": "中镉红",
+      "pigmentIndex": "PR108",
+      "featured": false,
+      "sortOrder": 430,
+      "image": "/colors/430.webp",
+      "shortDescEn": "Professional watercolour 430. Offered as a 15 ml tube, a 3.8 ml full pan, and a 1.8 ml half pan.",
+      "shortDescZh": "专业水彩 430。提供 15 ml 管装、3.8 ml 全块和 1.8 ml 半块。",
+      "formats": [
+        {
+          "id": "tube",
+          "size": "15 ml",
+          "sku": "S10352430"
+        },
+        {
+          "id": "fullPan",
+          "size": "3.8 ml",
+          "sku": "S10350430"
+        },
+        {
+          "id": "halfPan",
+          "size": "1.8 ml",
+          "sku": "S10351430"
+        }
+      ]
+    },
+    {
+      "slug": "452-iron-oxide-dark-red-l",
+      "code": "452",
+      "series": "S1",
+      "colorFamily": "red",
+      "nameEn": "Iron Oxide Dark Red (L)",
+      "nameZh": "氧化铁深红 (L)",
+      "pigmentIndex": null,
+      "featured": false,
+      "sortOrder": 452,
+      "image": "/colors/452.webp",
+      "shortDescEn": "Professional watercolour 452. Offered as a 15 ml tube, a 3.8 ml full pan, and a 1.8 ml half pan.",
+      "shortDescZh": "专业水彩 452。提供 15 ml 管装、3.8 ml 全块和 1.8 ml 半块。",
+      "formats": [
+        {
+          "id": "tube",
+          "size": "15 ml",
+          "sku": "S10352452"
+        },
+        {
+          "id": "fullPan",
+          "size": "3.8 ml",
+          "sku": "S10350452"
+        },
+        {
+          "id": "halfPan",
+          "size": "1.8 ml",
+          "sku": "S10351452"
+        }
+      ]
+    },
+    {
+      "slug": "454-cerium-red",
+      "code": "454",
+      "series": "S5",
+      "colorFamily": "red",
+      "nameEn": "Cerium Red",
+      "nameZh": "铈红",
+      "pigmentIndex": "PR265",
+      "featured": false,
+      "sortOrder": 454,
+      "image": "/colors/454.webp",
+      "shortDescEn": "Professional watercolour 454. Offered as a 15 ml tube, a 3.8 ml full pan, and a 1.8 ml half pan.",
+      "shortDescZh": "专业水彩 454。提供 15 ml 管装、3.8 ml 全块和 1.8 ml 半块。",
+      "formats": [
+        {
+          "id": "tube",
+          "size": "15 ml",
+          "sku": "S10352454"
+        },
+        {
+          "id": "fullPan",
+          "size": "3.8 ml",
+          "sku": "S10350454"
+        },
+        {
+          "id": "halfPan",
+          "size": "1.8 ml",
+          "sku": "S10351454"
+        }
+      ]
+    },
+    {
+      "slug": "460-iron-oxide-light-red-l",
+      "code": "460",
+      "series": "S1",
+      "colorFamily": "red",
+      "nameEn": "Iron Oxide Light Red (L)",
+      "nameZh": "氧化铁浅红 (L)",
+      "pigmentIndex": "PR101",
+      "featured": false,
+      "sortOrder": 460,
+      "image": "/colors/460.webp",
+      "shortDescEn": "Professional watercolour 460. Offered as a 15 ml tube, a 3.8 ml full pan, and a 1.8 ml half pan.",
+      "shortDescZh": "专业水彩 460。提供 15 ml 管装、3.8 ml 全块和 1.8 ml 半块。",
+      "formats": [
+        {
+          "id": "tube",
+          "size": "15 ml",
+          "sku": "S10352460"
+        },
+        {
+          "id": "fullPan",
+          "size": "3.8 ml",
+          "sku": "S10350460"
+        },
+        {
+          "id": "halfPan",
+          "size": "1.8 ml",
+          "sku": "S10351460"
+        }
+      ]
+    },
+    {
+      "slug": "505-deep-cobalt-ultramarine-violet",
+      "code": "505",
+      "series": "S4",
+      "colorFamily": "purple",
+      "nameEn": "Deep Cobalt Ultramarine Violet",
+      "nameZh": "深钴蓝群青紫",
+      "pigmentIndex": "PV15",
+      "featured": false,
+      "sortOrder": 505,
+      "image": "/colors/505.webp",
+      "shortDescEn": "Professional watercolour 505. Offered as a 15 ml tube, a 3.8 ml full pan, and a 1.8 ml half pan.",
+      "shortDescZh": "专业水彩 505。提供 15 ml 管装、3.8 ml 全块和 1.8 ml 半块。",
+      "formats": [
+        {
+          "id": "tube",
+          "size": "15 ml",
+          "sku": "S10352505"
+        },
+        {
+          "id": "fullPan",
+          "size": "3.8 ml",
+          "sku": "S10350505"
+        },
+        {
+          "id": "halfPan",
+          "size": "1.8 ml",
+          "sku": "S10351505"
+        }
+      ]
+    },
+    {
+      "slug": "602-phthalocyanine-blue-green-phase-p-b-15-3",
+      "code": "602",
+      "series": "S1",
+      "colorFamily": "blue",
+      "nameEn": "Phthalocyanine Blue (Green Phase) P.B.15:3",
+      "nameZh": "酞菁蓝（绿相）PB15:3",
+      "pigmentIndex": "PB15:3",
+      "featured": false,
+      "sortOrder": 602,
+      "image": "/colors/602.webp",
+      "shortDescEn": "Professional watercolour 602. Offered as a 15 ml tube, a 3.8 ml full pan, and a 1.8 ml half pan.",
+      "shortDescZh": "专业水彩 602。提供 15 ml 管装、3.8 ml 全块和 1.8 ml 半块。",
+      "formats": [
+        {
+          "id": "tube",
+          "size": "15 ml",
+          "sku": "S10352602"
+        },
+        {
+          "id": "fullPan",
+          "size": "3.8 ml",
+          "sku": "S10350602"
+        },
+        {
+          "id": "halfPan",
+          "size": "1.8 ml",
+          "sku": "S10351602"
+        }
+      ]
+    },
+    {
+      "slug": "604-light-blue-cobalt-chromite-blue-green-spinel",
+      "code": "604",
+      "series": "S4",
+      "colorFamily": "blue",
+      "nameEn": "Light Blue Cobalt Chromite Blue Green Spinel",
+      "nameZh": "浅蓝钴铬蓝绿尖晶石",
+      "pigmentIndex": "PB36",
+      "featured": false,
+      "sortOrder": 604,
+      "image": "/colors/604.webp",
+      "shortDescEn": "Professional watercolour 604. Offered as a 15 ml tube, a 3.8 ml full pan, and a 1.8 ml half pan.",
+      "shortDescZh": "专业水彩 604。提供 15 ml 管装、3.8 ml 全块和 1.8 ml 半块。",
+      "formats": [
+        {
+          "id": "tube",
+          "size": "15 ml",
+          "sku": "S10352604"
+        },
+        {
+          "id": "fullPan",
+          "size": "3.8 ml",
+          "sku": "S10350604"
+        },
+        {
+          "id": "halfPan",
+          "size": "1.8 ml",
+          "sku": "S10351604"
+        }
+      ]
+    },
+    {
+      "slug": "608-ultramarine",
+      "code": "608",
+      "series": "S2",
+      "colorFamily": "blue",
+      "nameEn": "Ultramarine",
+      "nameZh": "群青",
+      "pigmentIndex": "PB29",
+      "featured": true,
+      "sortOrder": 608,
+      "image": "/colors/608.webp",
+      "shortDescEn": "Professional watercolour 608. Offered as a 15 ml tube, a 3.8 ml full pan, and a 1.8 ml half pan.",
+      "shortDescZh": "专业水彩 608。提供 15 ml 管装、3.8 ml 全块和 1.8 ml 半块。",
+      "formats": [
+        {
+          "id": "tube",
+          "size": "15 ml",
+          "sku": "S10352608"
+        },
+        {
+          "id": "fullPan",
+          "size": "3.8 ml",
+          "sku": "S10350608"
+        },
+        {
+          "id": "halfPan",
+          "size": "1.8 ml",
+          "sku": "S10351608"
+        }
+      ]
+    },
+    {
+      "slug": "617-cobalt-aluminum-blue",
+      "code": "617",
+      "series": "S3",
+      "colorFamily": "blue",
+      "nameEn": "Cobalt Aluminum Blue",
+      "nameZh": "钴铝蓝",
+      "pigmentIndex": null,
+      "featured": false,
+      "sortOrder": 617,
+      "image": "/colors/617.webp",
+      "shortDescEn": "Professional watercolour 617. Offered as a 15 ml tube, a 3.8 ml full pan, and a 1.8 ml half pan.",
+      "shortDescZh": "专业水彩 617。提供 15 ml 管装、3.8 ml 全块和 1.8 ml 半块。",
+      "formats": [
+        {
+          "id": "tube",
+          "size": "15 ml",
+          "sku": "S10352617"
+        },
+        {
+          "id": "fullPan",
+          "size": "3.8 ml",
+          "sku": "S10350617"
+        },
+        {
+          "id": "halfPan",
+          "size": "1.8 ml",
+          "sku": "S10351617"
+        }
+      ]
+    },
+    {
+      "slug": "620-cobalt-chromium-peacock-blue",
+      "code": "620",
+      "series": "S3",
+      "colorFamily": "blue",
+      "nameEn": "Cobalt Chromium Peacock Blue",
+      "nameZh": "钴铬孔雀蓝",
+      "pigmentIndex": null,
+      "featured": false,
+      "sortOrder": 620,
+      "image": "/colors/620.webp",
+      "shortDescEn": "Professional watercolour 620. Offered as a 15 ml tube, a 3.8 ml full pan, and a 1.8 ml half pan.",
+      "shortDescZh": "专业水彩 620。提供 15 ml 管装、3.8 ml 全块和 1.8 ml 半块。",
+      "formats": [
+        {
+          "id": "tube",
+          "size": "15 ml",
+          "sku": "S10352620"
+        },
+        {
+          "id": "fullPan",
+          "size": "3.8 ml",
+          "sku": "S10350620"
+        },
+        {
+          "id": "halfPan",
+          "size": "1.8 ml",
+          "sku": "S10351620"
+        }
+      ]
+    },
+    {
+      "slug": "633-bright-cobalt-blue",
+      "code": "633",
+      "series": "S4",
+      "colorFamily": "blue",
+      "nameEn": "Bright Cobalt Blue",
+      "nameZh": "亮钴蓝",
+      "pigmentIndex": "PB28",
+      "featured": false,
+      "sortOrder": 633,
+      "image": "/colors/633.webp",
+      "shortDescEn": "Professional watercolour 633. Offered as a 15 ml tube, a 3.8 ml full pan, and a 1.8 ml half pan.",
+      "shortDescZh": "专业水彩 633。提供 15 ml 管装、3.8 ml 全块和 1.8 ml 半块。",
+      "formats": [
+        {
+          "id": "tube",
+          "size": "15 ml",
+          "sku": "S10352633"
+        },
+        {
+          "id": "fullPan",
+          "size": "3.8 ml",
+          "sku": "S10350633"
+        },
+        {
+          "id": "halfPan",
+          "size": "1.8 ml",
+          "sku": "S10351633"
+        }
+      ]
+    },
+    {
+      "slug": "702-chrome-oxide-green",
+      "code": "702",
+      "series": "S4",
+      "colorFamily": "green",
+      "nameEn": "Chrome Oxide Green",
+      "nameZh": "氧化铬绿",
+      "pigmentIndex": "PG17",
+      "featured": true,
+      "sortOrder": 702,
+      "image": "/colors/702.webp",
+      "shortDescEn": "Professional watercolour 702. Offered as a 15 ml tube, a 3.8 ml full pan, and a 1.8 ml half pan.",
+      "shortDescZh": "专业水彩 702。提供 15 ml 管装、3.8 ml 全块和 1.8 ml 半块。",
+      "formats": [
+        {
+          "id": "tube",
+          "size": "15 ml",
+          "sku": "S10352702"
+        },
+        {
+          "id": "fullPan",
+          "size": "3.8 ml",
+          "sku": "S10350702"
+        },
+        {
+          "id": "halfPan",
+          "size": "1.8 ml",
+          "sku": "S10351702"
+        }
+      ]
+    },
+    {
+      "slug": "706-turquoise-cobalt-blue",
+      "code": "706",
+      "series": "S4",
+      "colorFamily": "blue",
+      "nameEn": "Turquoise Cobalt Blue",
+      "nameZh": "松石钴蓝",
+      "pigmentIndex": null,
+      "featured": false,
+      "sortOrder": 706,
+      "image": "/colors/706.webp",
+      "shortDescEn": "Professional watercolour 706. Offered as a 15 ml tube, a 3.8 ml full pan, and a 1.8 ml half pan.",
+      "shortDescZh": "专业水彩 706。提供 15 ml 管装、3.8 ml 全块和 1.8 ml 半块。",
+      "formats": [
+        {
+          "id": "tube",
+          "size": "15 ml",
+          "sku": "S10352706"
+        },
+        {
+          "id": "fullPan",
+          "size": "3.8 ml",
+          "sku": "S10350706"
+        },
+        {
+          "id": "halfPan",
+          "size": "1.8 ml",
+          "sku": "S10351706"
+        }
+      ]
+    },
+    {
+      "slug": "723-phthalocyanine-green-c2",
+      "code": "723",
+      "series": "S1",
+      "colorFamily": "green",
+      "nameEn": "Phthalocyanine Green (C2)",
+      "nameZh": "酞菁绿（C2）",
+      "pigmentIndex": "PG7",
+      "featured": false,
+      "sortOrder": 723,
+      "image": "/colors/723.webp",
+      "shortDescEn": "Professional watercolour 723. Offered as a 15 ml tube, a 3.8 ml full pan, and a 1.8 ml half pan.",
+      "shortDescZh": "专业水彩 723。提供 15 ml 管装、3.8 ml 全块和 1.8 ml 半块。",
+      "formats": [
+        {
+          "id": "tube",
+          "size": "15 ml",
+          "sku": "S10352723"
+        },
+        {
+          "id": "fullPan",
+          "size": "3.8 ml",
+          "sku": "S10350723"
+        },
+        {
+          "id": "halfPan",
+          "size": "1.8 ml",
+          "sku": "S10351723"
+        }
+      ]
+    },
+    {
+      "slug": "726-bright-cobalt-titanium-green",
+      "code": "726",
+      "series": "S4",
+      "colorFamily": "green",
+      "nameEn": "Bright Cobalt Titanium Green",
+      "nameZh": "亮钴钛绿",
+      "pigmentIndex": "PG50",
+      "featured": false,
+      "sortOrder": 726,
+      "image": "/colors/726.webp",
+      "shortDescEn": "Professional watercolour 726. Offered as a 15 ml tube, a 3.8 ml full pan, and a 1.8 ml half pan.",
+      "shortDescZh": "专业水彩 726。提供 15 ml 管装、3.8 ml 全块和 1.8 ml 半块。",
+      "formats": [
+        {
+          "id": "tube",
+          "size": "15 ml",
+          "sku": "S10352726"
+        },
+        {
+          "id": "fullPan",
+          "size": "3.8 ml",
+          "sku": "S10350726"
+        },
+        {
+          "id": "halfPan",
+          "size": "1.8 ml",
+          "sku": "S10351726"
+        }
+      ]
+    },
+    {
+      "slug": "805-bone-black-ivory-black",
+      "code": "805",
+      "series": "S1",
+      "colorFamily": "black",
+      "nameEn": "Bone Black (Ivory Black)",
+      "nameZh": "骨黑（象牙黑）",
+      "pigmentIndex": "PBk9",
+      "featured": true,
+      "sortOrder": 805,
+      "image": "/colors/805.webp",
+      "shortDescEn": "Professional watercolour 805. Offered as a 15 ml tube, a 3.8 ml full pan, and a 1.8 ml half pan.",
+      "shortDescZh": "专业水彩 805。提供 15 ml 管装、3.8 ml 全块和 1.8 ml 半块。",
+      "formats": [
+        {
+          "id": "tube",
+          "size": "15 ml",
+          "sku": "S10352805"
+        },
+        {
+          "id": "fullPan",
+          "size": "3.8 ml",
+          "sku": "S10350805"
+        },
+        {
+          "id": "halfPan",
+          "size": "1.8 ml",
+          "sku": "S10351805"
+        }
+      ]
+    },
+    {
+      "slug": "821-manganese-iron-black",
+      "code": "821",
+      "series": "S2",
+      "colorFamily": "black",
+      "nameEn": "Manganese Iron Black",
+      "nameZh": "锰铁黑",
+      "pigmentIndex": null,
+      "featured": false,
+      "sortOrder": 821,
+      "image": "/colors/821.webp",
+      "shortDescEn": "Professional watercolour 821. Offered as a 15 ml tube, a 3.8 ml full pan, and a 1.8 ml half pan.",
+      "shortDescZh": "专业水彩 821。提供 15 ml 管装、3.8 ml 全块和 1.8 ml 半块。",
+      "formats": [
+        {
+          "id": "tube",
+          "size": "15 ml",
+          "sku": "S10352821"
+        },
+        {
+          "id": "fullPan",
+          "size": "3.8 ml",
+          "sku": "S10350821"
+        },
+        {
+          "id": "halfPan",
+          "size": "1.8 ml",
+          "sku": "S10351821"
+        }
+      ]
+    },
+    {
+      "slug": "832-pure-jilin-panshi-graphite",
+      "code": "832",
+      "series": "S1",
+      "colorFamily": "black",
+      "nameEn": "Pure Jilin Panshi Graphite",
+      "nameZh": "纯吉林磐石石墨",
+      "pigmentIndex": null,
+      "featured": false,
+      "sortOrder": 832,
+      "image": "/colors/832.webp",
+      "shortDescEn": "Professional watercolour 832. Offered as a 15 ml tube, a 3.8 ml full pan, and a 1.8 ml half pan.",
+      "shortDescZh": "专业水彩 832。提供 15 ml 管装、3.8 ml 全块和 1.8 ml 半块。",
+      "formats": [
+        {
+          "id": "tube",
+          "size": "15 ml",
+          "sku": "S10352832"
+        },
+        {
+          "id": "fullPan",
+          "size": "3.8 ml",
+          "sku": "S10350832"
+        },
+        {
+          "id": "halfPan",
+          "size": "1.8 ml",
+          "sku": "S10351832"
+        }
+      ]
+    },
+    {
+      "slug": "834-iron-oxide-black-l",
+      "code": "834",
+      "series": "S1",
+      "colorFamily": "black",
+      "nameEn": "Iron Oxide Black (L)",
+      "nameZh": "氧化铁黑 (L)",
+      "pigmentIndex": null,
+      "featured": false,
+      "sortOrder": 834,
+      "image": "/colors/834.webp",
+      "shortDescEn": "Professional watercolour 834. Offered as a 15 ml tube, a 3.8 ml full pan, and a 1.8 ml half pan.",
+      "shortDescZh": "专业水彩 834。提供 15 ml 管装、3.8 ml 全块和 1.8 ml 半块。",
+      "formats": [
+        {
+          "id": "tube",
+          "size": "15 ml",
+          "sku": "S10352834"
+        },
+        {
+          "id": "fullPan",
+          "size": "3.8 ml",
+          "sku": "S10350834"
+        },
+        {
+          "id": "halfPan",
+          "size": "1.8 ml",
+          "sku": "S10351834"
+        }
+      ]
+    },
+    {
+      "slug": "908-iron-oxide-dark-umber",
+      "code": "908",
+      "series": "S1",
+      "colorFamily": "other",
+      "nameEn": "Iron Oxide Dark Umber",
+      "nameZh": "氧化铁深棕",
+      "pigmentIndex": null,
+      "featured": false,
+      "sortOrder": 908,
+      "image": "/colors/908.webp",
+      "shortDescEn": "Professional watercolour 908. Offered as a 15 ml tube, a 3.8 ml full pan, and a 1.8 ml half pan.",
+      "shortDescZh": "专业水彩 908。提供 15 ml 管装、3.8 ml 全块和 1.8 ml 半块。",
+      "formats": [
+        {
+          "id": "tube",
+          "size": "15 ml",
+          "sku": "S10352908"
+        },
+        {
+          "id": "fullPan",
+          "size": "3.8 ml",
+          "sku": "S10350908"
+        },
+        {
+          "id": "halfPan",
+          "size": "1.8 ml",
+          "sku": "S10351908"
+        }
+      ]
+    },
+    {
+      "slug": "911-iron-titanium-brown-spinel",
+      "code": "911",
+      "series": "S2",
+      "colorFamily": "other",
+      "nameEn": "Iron Titanium Brown Spinel",
+      "nameZh": "铁钛棕尖晶石",
+      "pigmentIndex": "PBk12",
+      "featured": false,
+      "sortOrder": 911,
+      "image": null,
+      "shortDescEn": "Professional watercolour 911. Offered as a 15 ml tube, a 3.8 ml full pan, and a 1.8 ml half pan.",
+      "shortDescZh": "专业水彩 911。提供 15 ml 管装、3.8 ml 全块和 1.8 ml 半块。",
+      "formats": [
+        {
+          "id": "tube",
+          "size": "15 ml",
+          "sku": "S10352911"
+        },
+        {
+          "id": "fullPan",
+          "size": "3.8 ml",
+          "sku": "S10350911"
+        },
+        {
+          "id": "halfPan",
+          "size": "1.8 ml",
+          "sku": "S10351911"
+        }
+      ]
+    },
+    {
+      "slug": "932-iron-oxide-wine-red-l",
+      "code": "932",
+      "series": "S1",
+      "colorFamily": "red",
+      "nameEn": "Iron Oxide Wine Red (L)",
+      "nameZh": "氧化铁酒红 (L)",
+      "pigmentIndex": null,
+      "featured": false,
+      "sortOrder": 932,
+      "image": "/colors/932.webp",
+      "shortDescEn": "Professional watercolour 932. Offered as a 15 ml tube, a 3.8 ml full pan, and a 1.8 ml half pan.",
+      "shortDescZh": "专业水彩 932。提供 15 ml 管装、3.8 ml 全块和 1.8 ml 半块。",
+      "formats": [
+        {
+          "id": "tube",
+          "size": "15 ml",
+          "sku": "S10352932"
+        },
+        {
+          "id": "fullPan",
+          "size": "3.8 ml",
+          "sku": "S10350932"
+        },
+        {
+          "id": "halfPan",
+          "size": "1.8 ml",
+          "sku": "S10351932"
+        }
+      ]
+    },
+    {
+      "slug": "935-iron-oxide-burnt-umber",
+      "code": "935",
+      "series": "S1",
+      "colorFamily": "other",
+      "nameEn": "Iron Oxide Burnt Umber",
+      "nameZh": "氧化铁熟褐",
+      "pigmentIndex": null,
+      "featured": false,
+      "sortOrder": 935,
+      "image": "/colors/935.webp",
+      "shortDescEn": "Professional watercolour 935. Offered as a 15 ml tube, a 3.8 ml full pan, and a 1.8 ml half pan.",
+      "shortDescZh": "专业水彩 935。提供 15 ml 管装、3.8 ml 全块和 1.8 ml 半块。",
+      "formats": [
+        {
+          "id": "tube",
+          "size": "15 ml",
+          "sku": "S10352935"
+        },
+        {
+          "id": "fullPan",
+          "size": "3.8 ml",
+          "sku": "S10350935"
+        },
+        {
+          "id": "halfPan",
+          "size": "1.8 ml",
+          "sku": "S10351935"
+        }
+      ]
+    }
+  ],
+  "sets": [
+    {
+      "slug": "s103100007-6-color-base-colors",
+      "nameEn": "6-color base colors",
+      "nameZh": "6色基础色",
+      "shortDescEn": "Metal box with 8 full pans.",
+      "shortDescZh": "金属盒，8个全块。",
+      "featured": true,
+      "sortOrder": 0,
+      "image": "/brand/sets.webp",
+      "formats": [
+        {
+          "id": "set",
+          "size": "8 full pans",
+          "sku": "S103100007"
+        }
+      ]
+    },
+    {
+      "slug": "s103100008-8-color-iron-oxide",
+      "nameEn": "8-color iron oxide",
+      "nameZh": "8色氧化铁",
+      "shortDescEn": "Metal box with 8 full pans.",
+      "shortDescZh": "金属盒，8个全块。",
+      "featured": false,
+      "sortOrder": 1,
+      "image": "/brand/sets.webp",
+      "formats": [
+        {
+          "id": "set",
+          "size": "8 full pans",
+          "sku": "S103100008"
+        }
+      ]
+    },
+    {
+      "slug": "s103100020-8-color-yellow-series",
+      "nameEn": "8-color yellow series",
+      "nameZh": "8色黄色系列",
+      "shortDescEn": "Metal box with 8 full pans.",
+      "shortDescZh": "金属盒，8个全块。",
+      "featured": false,
+      "sortOrder": 2,
+      "image": "/brand/sets.webp",
+      "formats": [
+        {
+          "id": "set",
+          "size": "8 full pans",
+          "sku": "S103100020"
+        }
+      ]
+    },
+    {
+      "slug": "s103100040-8-color-red-series",
+      "nameEn": "8-color red series",
+      "nameZh": "8色红色系列",
+      "shortDescEn": "Metal box with 8 full pans.",
+      "shortDescZh": "金属盒，8个全块。",
+      "featured": false,
+      "sortOrder": 3,
+      "image": "/brand/sets.webp",
+      "formats": [
+        {
+          "id": "set",
+          "size": "8 full pans",
+          "sku": "S103100040"
+        }
+      ]
+    },
+    {
+      "slug": "s103100060-8-color-blue-series",
+      "nameEn": "8-color blue series",
+      "nameZh": "8色蓝色系列",
+      "shortDescEn": "Metal box with 8 full pans.",
+      "shortDescZh": "金属盒，8个全块。",
+      "featured": false,
+      "sortOrder": 4,
+      "image": "/brand/sets.webp",
+      "formats": [
+        {
+          "id": "set",
+          "size": "8 full pans",
+          "sku": "S103100060"
+        }
+      ]
+    },
+    {
+      "slug": "s103100070-8-color-green-series",
+      "nameEn": "8-color green series",
+      "nameZh": "8色绿色系列",
+      "shortDescEn": "Metal box with 8 full pans.",
+      "shortDescZh": "金属盒，8个全块。",
+      "featured": false,
+      "sortOrder": 5,
+      "image": "/brand/sets.webp",
+      "formats": [
+        {
+          "id": "set",
+          "size": "8 full pans",
+          "sku": "S103100070"
+        }
+      ]
+    },
+    {
+      "slug": "s103100080-8-color-black-and-grey-series",
+      "nameEn": "8-color black and grey series",
+      "nameZh": "8色黑灰系列",
+      "shortDescEn": "Metal box with 8 full pans.",
+      "shortDescZh": "金属盒，8个全块。",
+      "featured": false,
+      "sortOrder": 6,
+      "image": "/brand/sets.webp",
+      "formats": [
+        {
+          "id": "set",
+          "size": "8 full pans",
+          "sku": "S103100080"
+        }
+      ]
+    },
+    {
+      "slug": "s103200009-14-basic-inorganic-colors-full-pans",
+      "nameEn": "14 basic inorganic colors",
+      "nameZh": "14色基础无机色",
+      "shortDescEn": "Metal box with 14 full pans.",
+      "shortDescZh": "金属盒，14个全块。",
+      "featured": true,
+      "sortOrder": 7,
+      "image": "/brand/sets.webp",
+      "formats": [
+        {
+          "id": "set",
+          "size": "14 full pans",
+          "sku": "S103200009"
+        }
+      ]
+    },
+    {
+      "slug": "s103200200-14-glazed-colors-full-pans",
+      "nameEn": "14 glazed colors",
+      "nameZh": "14色釉彩",
+      "shortDescEn": "Metal box with 14 full pans.",
+      "shortDescZh": "金属盒，14个全块。",
+      "featured": false,
+      "sortOrder": 8,
+      "image": "/brand/sets.webp",
+      "formats": [
+        {
+          "id": "set",
+          "size": "14 full pans",
+          "sku": "S103200200"
+        }
+      ]
+    },
+    {
+      "slug": "s103300009-14-basic-inorganic-colors-half-pans",
+      "nameEn": "14 basic inorganic colors",
+      "nameZh": "14色基础无机色",
+      "shortDescEn": "Metal box with 14 half pans.",
+      "shortDescZh": "金属盒，14个半块。",
+      "featured": false,
+      "sortOrder": 9,
+      "image": "/brand/sets.webp",
+      "formats": [
+        {
+          "id": "set",
+          "size": "14 half pans",
+          "sku": "S103300009"
+        }
+      ]
+    },
+    {
+      "slug": "s103300200-14-glazed-colors-half-pans",
+      "nameEn": "14 glazed colors",
+      "nameZh": "14色釉彩",
+      "shortDescEn": "Metal box with 14 half pans.",
+      "shortDescZh": "金属盒，14个半块。",
+      "featured": false,
+      "sortOrder": 10,
+      "image": "/brand/sets.webp",
+      "formats": [
+        {
+          "id": "set",
+          "size": "14 half pans",
+          "sku": "S103300200"
+        }
+      ]
+    }
+  ],
+  "mediums": [
+    {
+      "slug": "ox-gall",
+      "nameEn": "Ox Gall",
+      "nameZh": "牛胆汁",
+      "shortDescEn": "Traditional watercolour wetting agent.",
+      "shortDescZh": "传统水彩润湿剂。",
+      "featured": true,
+      "sortOrder": 0,
+      "image": "/brand/tubes.webp",
+      "formats": [
+        {
+          "id": "60",
+          "size": "60 ml",
+          "sku": "S10400101"
+        },
+        {
+          "id": "110",
+          "size": "110 ml",
+          "sku": "S10400102"
+        }
+      ]
+    },
+    {
+      "slug": "film-masking",
+      "nameEn": "Film Masking",
+      "nameZh": "留白液",
+      "shortDescEn": "Masking fluid for reserving white paper.",
+      "shortDescZh": "用于留白的遮盖液。",
+      "featured": false,
+      "sortOrder": 1,
+      "image": "/brand/tubes.webp",
+      "formats": [
+        {
+          "id": "60",
+          "size": "60 ml",
+          "sku": "S10400205"
+        },
+        {
+          "id": "110",
+          "size": "110 ml",
+          "sku": "S10400210"
+        }
+      ]
+    },
+    {
+      "slug": "gum-arabic",
+      "nameEn": "Gum Arabic",
+      "nameZh": "阿拉伯胶",
+      "shortDescEn": "Binder that adds gloss and body to a wash.",
+      "shortDescZh": "增加光泽与浓度的水彩黏合剂。",
+      "featured": false,
+      "sortOrder": 2,
+      "image": "/brand/tubes.webp",
+      "formats": [
+        {
+          "id": "60",
+          "size": "60 ml",
+          "sku": "S10400301"
+        },
+        {
+          "id": "110",
+          "size": "110 ml",
+          "sku": "S10400302"
+        }
+      ]
+    },
+    {
+      "slug": "white-ink-highlight",
+      "nameEn": "White Ink (Highlight)",
+      "nameZh": "白色墨水（高光）",
+      "shortDescEn": "Opaque white for highlights.",
+      "shortDescZh": "用于高光的不透明白。",
+      "featured": false,
+      "sortOrder": 3,
+      "image": "/brand/tubes.webp",
+      "formats": [
+        {
+          "id": "25",
+          "size": "25 ml",
+          "sku": "S10400901"
+        }
+      ]
+    },
+    {
+      "slug": "white-ink-matt",
+      "nameEn": "White Ink (Matt)",
+      "nameZh": "白色墨水（哑光）",
+      "shortDescEn": "Matte white ink.",
+      "shortDescZh": "哑光白色墨水。",
+      "featured": false,
+      "sortOrder": 4,
+      "image": "/brand/tubes.webp",
+      "formats": [
+        {
+          "id": "25",
+          "size": "25 ml",
+          "sku": "S10400902"
+        }
+      ]
+    }
+  ],
+  "agents": [
+    {
+      "name": "Sinours Laboratory",
+      "region": "Hebei",
+      "country": "China",
+      "contact": "ARTAGER group",
+      "email": null,
+      "phone": "+86 316 832 1001",
+      "website": "https://www.instagram.com/sinours.art/",
+      "sortOrder": 0
+    },
+    {
+      "name": "WatercolorLK",
+      "region": "Sri Lanka",
+      "country": "Sri Lanka",
+      "contact": "No. 78/A2, Madampe 61230",
+      "email": null,
+      "phone": "+94 76 457 7889",
+      "website": "https://watercolor.lk",
+      "sortOrder": 1
+    }
+  ]
+}

@@ -24,27 +24,27 @@
     "getInTouch": "联系我们"
   },
   "home": {
-    "heroEyebrow": "艺术家级颜料",
-    "heroTitle": "为当代画家研磨的色彩。",
-    "heroSubtitle": "Sinours 为重视耐光性、透明度以及笔触手感的艺术家,精心研磨水彩颜料与媒介剂。",
+    "heroEyebrow": "专业水彩",
+    "heroTitle": "来自 Sinours 实验室的色彩。",
+    "heroSubtitle": "Sinours 专业水彩在中国河北研发并制造。在这里浏览管装、固体块、套装与媒介，再通过授权代理订购。",
     "heroPrimary": "浏览产品",
     "heroSecondary": "查找代理",
-    "storyEyebrow": "我们的故事",
-    "storyTitle": "由画家创造,为画家而生。",
-    "storyBody": "每一款 Sinours 色彩都由精选颜料粉手工研磨而成。我们测量真正重要的指标——耐光性、透明度、颗粒均匀度、覆盖力——并把数据公布在每一款产品上。",
+    "storyEyebrow": "实验室",
+    "storyTitle": "中国研发，中国制造。",
+    "storyBody": "Sinours 是 ARTAGER 集团的专业水彩品牌。色彩在河北 Sinours 实验室研发，并在中国制造。每支单色都有编号，并提供 15 ml 管装、3.8 ml 全块和 1.8 ml 半块。",
     "categoriesEyebrow": "产品系列",
-    "categoriesTitle": "三种方式找到属于你的色彩。",
-    "pigmentsDesc": "九大色系的单颜料水彩。",
-    "mediumsDesc": "改变颜料行为的修复与辅助媒介剂。",
-    "setsDesc": "为各种创作场景精心搭配的水彩与媒介剂套装。"
+    "categoriesTitle": "色彩、媒介与套装。",
+    "pigmentsDesc": "当前系列共 36 色，每色均有管装、全块和半块。",
+    "mediumsDesc": "牛胆汁、留白液、阿拉伯胶与白色墨水。",
+    "setsDesc": "全块与半块金属盒套装。"
   },
   "categories": {
-    "pigments": "颜料",
-    "mediums": "媒介剂",
+    "pigments": "色彩",
+    "mediums": "媒介",
     "sets": "套装",
-    "pigmentsShort": "单颜料色彩",
-    "mediumsShort": "颜料调节剂",
-    "setsShort": "精选合集"
+    "pigmentsShort": "管装与固体块",
+    "mediumsShort": "绘画媒介",
+    "setsShort": "金属盒套装"
   },
   "colors": {
     "white": "白色",
@@ -56,15 +56,15 @@
     "green": "绿色",
     "black": "黑色",
     "other": "其他颜色",
-    "pigmentsShort": "单颜料色彩",
-    "repairMedium": "水彩修复媒介剂",
-    "auxiliaryMedium": "水彩辅助媒介剂",
-    "watercolorSet": "水彩套装",
+    "pigmentsShort": "管装与固体块",
+    "repairMedium": "留白液",
+    "auxiliaryMedium": "绘画媒介",
+    "watercolorSet": "金属盒套装",
     "mediumSet": "媒介剂套装"
   },
   "shop": {
     "title": "产品",
-    "subtitle": "浏览完整的 Sinours 产品系列。本站不直接销售,请联系授权代理订购。",
+    "subtitle": "当前 Sinours 产品系列。本站不标价、不直接销售，请通过授权代理订购。",
     "filters": "筛选",
     "category": "类别",
     "color": "颜色",
@@ -77,42 +77,51 @@
     "browseCategories": "按类别浏览"
   },
   "product": {
-    "specifications": "规格参数",
-    "colorPowder": "颜料粉",
-    "lightResistance": "耐光性",
-    "transparency": "透明度",
-    "particleRegularity": "颗粒均匀度",
-    "coverage": "覆盖力",
+    "specifications": "规格",
     "series": "系列",
     "pigmentIndex": "颜料索引",
-    "findAgentToOrder": "本产品通过授权 Sinours 代理销售。",
-    "relatedProducts": "相关产品"
+    "formatsTitle": "可选规格",
+    "formatsNote": "同一颜色有多种包装。请向代理报出所需货号。本页不标价。",
+    "format": "规格",
+    "size": "容量",
+    "sku": "货号",
+    "format_tube": "管装",
+    "format_fullPan": "全块",
+    "format_halfPan": "半块",
+    "format_set": "套装",
+    "format_bottle": "瓶装",
+    "findAgentToOrder": "通过授权 Sinours 代理供应。本页不销售，也不显示价格。",
+    "relatedProducts": "相关色彩"
   },
   "about": {
     "title": "关于 Sinours",
-    "subtitle": "一家建立在颜料科学之上、热爱这门手艺的水彩工坊。",
-    "companyTitle": "公司简介",
-    "companyBody": "Sinours 是一家专注于绘画材料的水彩制造商。我们自行研磨颜料粉、调配媒介剂,并公布每一款色彩背后的技术数据。我们服务于希望获得稳定、可长期保存作品的艺术家、插画师与教育工作者。",
-    "valuesTitle": "我们的坚持",
+    "subtitle": "专业水彩，在中国河北研发。",
+    "companyTitle": "实验室",
+    "companyBody": "Sinours 是 ARTAGER 集团的专业水彩品牌。色彩在中国河北 Sinours 实验室研发，并在中国制造。当前系列为 36 个编号色彩，每色提供 15 ml 管装、3.8 ml 全块和 1.8 ml 半块，另有金属盒套装以及牛胆汁、留白液、阿拉伯胶和白色墨水。本网站不直接销售。艺术家与画材店通过授权代理订购。",
+    "valuesTitle": "系列如何编排",
     "values": {
       "pigment": {
-        "title": "颜料优先",
-        "body": "我们标注并索引所用到的每一种颜料。没有神秘配方,没有捷径。"
+        "title": "每色一个编号",
+        "body": "每种颜色都有三位编号和系列号，印在管装与固体块上。已公布的颜料索引会显示在颜色页面。"
       },
       "data": {
-        "title": "数据公开",
-        "body": "耐光性、透明度、颗粒均匀度与覆盖力均公布于每一款产品页面。"
+        "title": "三种规格",
+        "body": "管装、全块和半块共用同一个颜色编号。产品页只列出容量和货号。"
       },
       "archive": {
-        "title": "经久耐用",
-        "body": "通过耐光性测试,确保今日之作百年之后依然如新。"
+        "title": "通过代理销售",
+        "body": "没有购物车，也没有价格表。请联系代理或写信给实验室订购。"
       }
     }
   },
   "contact": {
     "title": "联系我们",
-    "subtitle": "联系 Sinours 团队,或查找您附近的代理。",
-    "enterpriseTitle": "企业联系",
+    "subtitle": "实验室位于中国河北。当地订购请联系授权代理。",
+    "enterpriseTitle": "实验室",
+    "phoneValue": "+86 316 832 1001",
+    "addressValue": "中国河北 Sinours 实验室",
+    "instagramLabel": "Instagram",
+    "instagramValue": "@sinours.art",
     "agentTitle": "代理名录",
     "formTitle": "给我们留言",
     "formName": "您的姓名",
@@ -121,33 +130,33 @@
     "formMessage": "留言内容",
     "formSend": "发送信息",
     "formSuccess": "感谢您——我们已收到您的信息,将尽快回复。",
-    "formError": "出错了,请重试或直接给我们发邮件。",
+    "formError": "出错了，请重试。",
     "emailLabel": "邮箱",
     "phoneLabel": "电话",
     "addressLabel": "地址",
     "hoursLabel": "工作时间",
-    "hoursValue": "周一至周五 9:00–18:00 (GMT+8)"
+    "hoursValue": ""
   },
   "agents": {
     "title": "查找代理",
-    "subtitle": "Sinours 通过授权代理网络销售。请直接联系当地代理订购或咨询库存。",
+    "subtitle": "Sinours 通过授权代理销售。河北实验室可以为您对接，WatercolorLK 在斯里兰卡供应这一系列。",
     "all": "所有地区",
     "region": "地区",
     "contact": "联系人",
     "email": "邮箱",
     "phone": "电话",
-    "becomeAgent": "成为代理",
-    "becomeAgentBody": "有兴趣在您所在地区代理 Sinours?我们的网络正在扩展。联系我们,开启合作。"
+    "becomeAgent": "代理合作",
+    "becomeAgentBody": "若希望在您所在地区销售 Sinours，请写信给实验室，说明所在地以及希望如何合作。"
   },
   "footer": {
-    "tagline": "为当代画家研磨的色彩。",
+    "tagline": "来自中国河北的专业水彩。",
     "shopCol": "产品",
     "companyCol": "公司",
     "supportCol": "支持",
     "rights": "保留所有权利。",
     "privacy": "隐私政策",
     "terms": "使用条款",
-    "madeWith": "为画家而造。"
+    "madeWith": "中国研发，中国制造。"
   },
   "theme": {
     "toggle": "切换主题",

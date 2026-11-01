@@ -3,7 +3,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ArrowRight, FlaskConical, Layers, Palette } from "lucide-react";
 import type { Locale } from "@/i18n/routing";
 import { localeHref } from "@/lib/nav";
-import { ImagePlaceholder } from "@/components/image-placeholder";
+
 
 export default async function HomePage({
   params,
@@ -71,12 +71,11 @@ export default async function HomePage({
             </div>
           </div>
           {/* Image column — fills the full height of the row */}
-          <div className="min-h-[360px] md:min-h-[520px]">
-            <ImagePlaceholder
-              label={locale === "zh" ? "主视觉图" : "Hero image"}
-              hint={locale === "zh" ? "1920×1080 · 工作室场景" : "1920×1080 · studio scene"}
-              variant="hero"
-              className="h-full"
+          <div className="min-h-[360px] overflow-hidden rounded-2xl md:min-h-[520px]">
+            <img
+              src="/brand/hero.webp"
+              alt={locale === "zh" ? "Sinours 专业水彩管装" : "Sinours professional watercolour tubes"}
+              className="h-full w-full object-cover"
             />
           </div>
         </div>
@@ -92,11 +91,13 @@ export default async function HomePage({
               {t("storyBody")}
             </p>
           </div>
-          <ImagePlaceholder
-            label={locale === "zh" ? "研磨工艺" : "Milling process"}
-            hint={locale === "zh" ? "1200×900 · 工艺特写" : "1200×900 · process close-up"}
-            variant="landscape"
-          />
+          <div className="overflow-hidden rounded-2xl">
+            <img
+              src="/brand/story.webp"
+              alt={locale === "zh" ? "Sinours 群青 608" : "Sinours Ultramarine 608"}
+              className="h-full w-full object-cover"
+            />
+          </div>
         </div>
       </section>
 

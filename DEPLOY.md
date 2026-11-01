@@ -50,7 +50,7 @@ Set these in the Portainer stack's **Env vars** section (raw values, no quotes):
 | `NEXT_PUBLIC_BASE_URL`| Public base URL (baked into the JS bundle)      | `https://sinours.clossyan.com`  |
 | `APP_URL`             | Internal app URL                               | `https://sinours.clossyan.com`  |
 
-> **Important:** `NEXT_PUBLIC_BASE_URL` is a build-time variable (inlined by Next.js). It is set as a build-arg in GitHub Actions via the repo variable `NEXT_PUBLIC_BASE_URL`. Make sure this repo variable is set in GitHub → Settings → Secrets and variables → Actions → Variables.
+> **Important:** `NEXT_PUBLIC_BASE_URL` is inlined when GitHub Actions builds the image. Keep the repo variable set to `https://sinours.clossyan.com`. Portainer only pulls that image. It does not build the app on the VPS. Set `APP_URL`, `NEXT_PUBLIC_BASE_URL`, and the existing `CF_TUNNEL_TOKEN` in the stack. The public hostname stays `sinours.clossyan.com` → `http://app:3223`.
 
 ### 3. GHCR Image Pull Auth
 
@@ -120,7 +120,7 @@ Go to **GitHub → Settings → Secrets and variables → Actions → Variables*
 4. **Public hostname** tab → add:
    - **Subdomain:** `sinours`
    - **Domain:** `clossyan.com`
-   - **Service:** `http://app:3223` (internal Docker name).
+   - **Service:** `http://app:3223` (internal Docker name + port).
 5. Copy the tunnel token and set it as `CF_TUNNEL_TOKEN` in Portainer.
 
 ---

@@ -5,7 +5,6 @@ import type { Locale } from "@/i18n/routing";
 import { localeHref } from "@/lib/nav";
 import { getProducts } from "@/lib/products";
 import { ProductCard } from "@/components/product-card";
-import { ImagePlaceholder } from "@/components/image-placeholder";
 
 export const dynamic = "force-dynamic";
 
@@ -30,16 +29,19 @@ export default async function ShopPage({
       title: tc("pigments"),
       short: tc("pigmentsShort"),
       href: `${base}/pigments`,
+      image: "/brand/pigments.webp",
     },
     {
       title: tc("mediums"),
       short: tc("mediumsShort"),
       href: `${base}/mediums`,
+      image: "/brand/tubes.webp",
     },
     {
       title: tc("sets"),
       short: tc("setsShort"),
       href: `${base}/sets`,
+      image: "/brand/sets.webp",
     },
   ];
 
@@ -61,11 +63,10 @@ export default async function ShopPage({
               href={c.href}
               className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-surface transition-all hover:border-foreground hover:shadow-soft"
             >
-              <ImagePlaceholder
-                label={c.title}
-                hint={locale === "zh" ? "分类图" : "Category image"}
-                variant="landscape"
-                className="rounded-none border-0 border-b"
+              <img
+                src={c.image}
+                alt={c.title}
+                className="aspect-[3/2] w-full border-b border-border object-cover"
               />
               <div className="flex flex-col justify-between p-8">
                 <div>

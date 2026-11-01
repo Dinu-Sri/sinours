@@ -97,6 +97,18 @@ export default async function CategoryPage({
                 {t("color")}
               </p>
               <ul className="space-y-1.5">
+                <li>
+                  <Link
+                    href={`${base}/${category}`}
+                    className={`block rounded-md px-3 py-1.5 text-sm transition-colors hover:bg-surface-subtle hover:text-foreground ${
+                      !colorFamily
+                        ? "bg-surface-subtle font-medium text-foreground"
+                        : "text-muted-foreground"
+                    }`}
+                  >
+                    {t("all")}
+                  </Link>
+                </li>
                 {PIGMENT_COLORS.map((c) => (
                   <li key={c}>
                     <Link
@@ -107,8 +119,7 @@ export default async function CategoryPage({
                           : "text-muted-foreground"
                       }`}
                     >
-                      {/* @ts-expect-error dynamic color key */}
-                      {tc(c)}
+                      {tc(c as "yellow")}
                     </Link>
                   </li>
                 ))}

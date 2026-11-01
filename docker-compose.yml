@@ -4,7 +4,7 @@
 #
 # Required env (set in Portainer stack vars, raw values — no quotes):
 #   DB_PASSWORD          - postgres password
-#   CF_TUNNEL_TOKEN      - Cloudflare tunnel token (maps sinours.clossyan.com -> app:3000)
+#   CF_TUNNEL_TOKEN      - Cloudflare tunnel token (maps sinours.clossyan.com -> http://app:3223)
 #   APP_URL              - https://sinours.clossyan.com
 #   NEXT_PUBLIC_BASE_URL - https://sinours.clossyan.com
 

@@ -12,9 +12,8 @@ datasource db {
 }
 
 /// A pigment, medium, or set in the Sinours catalogue.
-/// Category + color family drive the shop filters; specs JSON holds the
-/// five pigment attributes (powder, lightfastness, transparency, particle
-/// regularity, coverage) that the client wants printed on every product.
+/// Category + color family drive the shop filters. specs JSON holds the
+/// colour code and the format rows (size + SKU). Prices are never stored.
 model Product {
   id          String       @id @default(cuid())
   slug        String       @unique

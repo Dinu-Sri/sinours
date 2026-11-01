@@ -7,13 +7,22 @@ export type ProductWithDerived = Product & {
   name: string;
   /** Localized short description. */
   shortDesc: string | null;
+  /** Manufacturer colour number, when this row is a single colour. */
+  code: string | null;
 };
+
+function colourCode(specs: Product["specs"]): string | null {
+  if (!specs || typeof specs !== "object" || Array.isArray(specs)) return null;
+  const code = (specs as { code?: unknown }).code;
+  return typeof code === "string" && code.length > 0 ? code : null;
+}
 
 export function localizeProduct(p: Product, locale: Locale): ProductWithDerived {
   return {
     ...p,
     name: locale === "zh" ? p.nameZh : p.nameEn,
     shortDesc: locale === "zh" ? p.shortDescZh : p.shortDescEn,
+    code: colourCode(p.specs),
   };
 }
 

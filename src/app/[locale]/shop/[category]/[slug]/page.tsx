@@ -4,9 +4,9 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ChevronRight, MapPin } from "lucide-react";
 import type { Locale } from "@/i18n/routing";
 import { localeHref } from "@/lib/nav";
-import { slugToCategory, categorySlug } from "@/lib/categories";
+import { slugToCategory } from "@/lib/categories";
 import { getProductBySlug, getRelatedProducts } from "@/lib/products";
-import { readSpecs, ratingDots, type SpecKey } from "@/lib/specs";
+import { readColourCode, readFormats } from "@/lib/specs";
 import { ProductImage } from "@/components/product-image";
 import { ProductCard } from "@/components/product-card";
 
@@ -29,12 +29,14 @@ export default async function ProductDetailPage({
   const tc = await getTranslations({ locale, namespace: "colors" });
   const ta = await getTranslations({ locale, namespace: "actions" });
 
-  const specs = readSpecs(product, locale as Locale);
+  const formats = readFormats(product);
+  const colourCode = readColourCode(product);
   const related = await getRelatedProducts(product, locale as Locale, 3);
   const base = localeHref(locale as Locale, "shop");
 
-  // @ts-expect-error dynamic color key
-  const colorLabel = product.colorFamily ? tc(product.colorFamily) : null;
+  const colorLabel = product.colorFamily
+    ? tc(product.colorFamily as "yellow")
+    : null;
 
   return (
     <article className="container-content py-12 md:py-16">
@@ -61,11 +63,9 @@ export default async function ProductDetailPage({
         {/* Image */}
         <div>
           <ProductImage
-            colorFamily={product.colorFamily}
-            category={product.category}
+            image={product.image}
             name={product.name}
-            size="lg"
-            className="border-0"
+            className="rounded-2xl border border-border"
           />
         </div>
 
@@ -76,7 +76,10 @@ export default async function ProductDetailPage({
               <span className="eyebrow">{colorLabel}</span>
             )}
             {product.series && (
-              <span className="text-xs text-muted-foreground">{product.series}</span>
+              <span className="text-xs text-muted-foreground">
+                {t("series")} {product.series}
+                {colourCode ? ` · ${colourCode}` : ""}
+              </span>
             )}
           </div>
           <h1 className="mt-3 text-display-lg font-bold">{product.name}</h1>
@@ -106,38 +109,40 @@ export default async function ProductDetailPage({
         </div>
       </div>
 
-      {/* Specifications */}
-      {specs.length > 0 && (
+      {formats.length > 0 && (
         <section className="mt-20">
-          <h2 className="text-2xl font-bold md:text-3xl">{t("specifications")}</h2>
+          <h2 className="text-2xl font-bold md:text-3xl">{t("formatsTitle")}</h2>
+          <p className="mt-3 max-w-2xl text-sm text-muted-foreground">
+            {t("formatsNote")}
+          </p>
           <div className="mt-6 overflow-hidden rounded-2xl border border-border">
             <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b border-border bg-surface-subtle text-left text-xs uppercase tracking-wide text-muted-foreground">
+                  <th className="px-5 py-3 font-medium">{t("format")}</th>
+                  <th className="px-5 py-3 font-medium">{t("size")}</th>
+                  <th className="px-5 py-3 font-medium">{t("sku")}</th>
+                </tr>
+              </thead>
               <tbody>
-                {specs.map((row, i) => (
+                {formats.map((row, i) => (
                   <tr
-                    key={row.key}
+                    key={row.sku}
                     className={i % 2 === 0 ? "bg-surface" : "bg-surface-subtle"}
                   >
-                    <th className="w-1/3 px-5 py-4 text-left align-top font-medium text-muted-foreground md:w-1/4">
-                      {t(row.key as SpecKey)}
+                    <th className="px-5 py-4 text-left font-medium">
+                      {row.id === "tube"
+                        ? t("format_tube")
+                        : row.id === "fullPan"
+                          ? t("format_fullPan")
+                          : row.id === "halfPan"
+                            ? t("format_halfPan")
+                            : row.id === "set"
+                              ? t("format_set")
+                              : t("format_bottle")}
                     </th>
-                    <td className="px-5 py-4">
-                      <div className="flex items-center gap-3">
-                        <span className="flex gap-1" aria-label={`${row.rating}/5`}>
-                          {ratingDots(row.rating).map((d, idx) => (
-                            <span
-                              key={idx}
-                              className={`h-2 w-2 rounded-full ${
-                                d === "on" ? "bg-foreground" : "bg-muted"
-                              }`}
-                            />
-                          ))}
-                        </span>
-                        {row.note && (
-                          <span className="text-muted-foreground">{row.note}</span>
-                        )}
-                      </div>
-                    </td>
+                    <td className="px-5 py-4">{row.size}</td>
+                    <td className="px-5 py-4 font-mono text-xs">{row.sku}</td>
                   </tr>
                 ))}
               </tbody>
@@ -155,7 +160,7 @@ export default async function ProductDetailPage({
               <ProductCard
                 key={p.id}
                 product={p}
-                localeHrefBase={`${base}/${categorySlug(p.category)}`}
+                localeHrefBase={base}
               />
             ))}
           </div>

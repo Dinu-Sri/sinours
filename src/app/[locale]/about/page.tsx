@@ -1,8 +1,6 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { BarChart3, Database, ShieldCheck } from "lucide-react";
 import type { Locale } from "@/i18n/routing";
-import { ImagePlaceholder } from "@/components/image-placeholder";
-
 export default async function AboutPage({
   params,
 }: {
@@ -38,11 +36,18 @@ export default async function AboutPage({
       </header>
 
       {/* Company intro */}
-      <section className="grid gap-10 border-y border-border py-16 md:grid-cols-[1fr_1.4fr] md:py-20">
-        <h2 className="text-2xl font-bold md:text-3xl">{t("companyTitle")}</h2>
-        <p className="text-lg leading-relaxed text-muted-foreground">
-          {t("companyBody")}
-        </p>
+      <section className="grid gap-10 border-y border-border py-16 md:grid-cols-[1fr_1.2fr] md:items-center md:py-20">
+        <img
+          src="/brand/about.webp"
+          alt={locale === "zh" ? "Sinours 包装上的产地说明" : "Origin line printed on Sinours packaging"}
+          className="w-full rounded-2xl border border-border object-cover"
+        />
+        <div>
+          <h2 className="text-2xl font-bold md:text-3xl">{t("companyTitle")}</h2>
+          <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
+            {t("companyBody")}
+          </p>
+        </div>
       </section>
 
       {/* Values */}

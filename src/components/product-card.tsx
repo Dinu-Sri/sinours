@@ -14,8 +14,7 @@ export function ProductCard({
 }) {
   const t = useTranslations("colors");
   const colorLabel = product.colorFamily
-    ? // @ts-expect-error dynamic key
-      t(product.colorFamily)
+    ? t(product.colorFamily as "yellow")
     : null;
 
   const href = `${localeHrefBase}/${categorySlug(product.category)}/${product.slug}`;
@@ -23,19 +22,15 @@ export function ProductCard({
   return (
     <Link href={href} className="group block">
       <div className="overflow-hidden rounded-lg border border-border bg-surface transition-shadow group-hover:shadow-soft">
-        <ProductImage
-          colorFamily={product.colorFamily}
-          category={product.category}
-          name={product.name}
-        />
+        <ProductImage image={product.image} name={product.name} />
       </div>
       <div className="mt-3 flex items-baseline justify-between gap-3">
         <h3 className="text-sm font-semibold tracking-wide">{product.name}</h3>
-        {product.pigmentIndex && (
-          <span className="shrink-0 text-xs text-muted-foreground">
-            {product.pigmentIndex}
-          </span>
-        )}
+        <span className="shrink-0 text-xs text-muted-foreground">
+          {[product.series, product.code ?? product.pigmentIndex]
+            .filter(Boolean)
+            .join(" · ")}
+        </span>
       </div>
       <p className="mt-1 text-xs text-muted-foreground">
         {colorLabel ?? product.shortDesc}

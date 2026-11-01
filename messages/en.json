@@ -24,27 +24,27 @@
     "getInTouch": "Get in touch"
   },
   "home": {
-    "heroEyebrow": "Artists' Pigments",
-    "heroTitle": "Color, ground for the modern painter.",
-    "heroSubtitle": "Sinours crafts finely milled watercolor pigments and mediums for artists who care about lightfastness, transparency, and the feel of a brush on paper.",
+    "heroEyebrow": "Professional Watercolour",
+    "heroTitle": "Colour from the Sinours laboratory.",
+    "heroSubtitle": "Sinours professional watercolours are researched and made in Hebei, China. Browse tubes, pans, sets, and mediums here, then order through an authorized agent.",
     "heroPrimary": "Explore the Shop",
     "heroSecondary": "Find an Agent",
-    "storyEyebrow": "Our Story",
-    "storyTitle": "Made for painters, by painters.",
-    "storyBody": "Every Sinours color is milled from carefully selected pigment powders and bound by hand. We measure what matters — lightfastness, transparency, particle regularity, coverage — and publish the numbers on every product.",
+    "storyEyebrow": "The Laboratory",
+    "storyTitle": "Researched and made in China.",
+    "storyBody": "Sinours is the professional watercolour line of ARTAGER group. Colours are developed at the Sinours laboratory in Hebei and made in China. Each single colour is numbered and offered as a 15 ml tube, a 3.8 ml full pan, and a 1.8 ml half pan.",
     "categoriesEyebrow": "The Collection",
-    "categoriesTitle": "Three ways to find your color.",
-    "pigmentsDesc": "Single-pigment watercolors across nine color families.",
-    "mediumsDesc": "Repair and auxiliary mediums that change how paint behaves.",
-    "setsDesc": "Curated watercolor and medium sets for every practice."
+    "categoriesTitle": "Colours, mediums, and sets.",
+    "pigmentsDesc": "36 colours in the current range, each in a tube, a full pan, and a half pan.",
+    "mediumsDesc": "Ox gall, film masking, gum arabic, and white ink.",
+    "setsDesc": "Metal-box sets of full pans and half pans."
   },
   "categories": {
-    "pigments": "Pigments",
+    "pigments": "Colours",
     "mediums": "Mediums",
     "sets": "Sets",
-    "pigmentsShort": "Single-pigment colors",
-    "mediumsShort": "Paint modifiers",
-    "setsShort": "Curated collections"
+    "pigmentsShort": "Tubes and pans",
+    "mediumsShort": "Painting mediums",
+    "setsShort": "Metal-box sets"
   },
   "colors": {
     "white": "White",
@@ -56,15 +56,15 @@
     "green": "Green",
     "black": "Black",
     "other": "Other Colors",
-    "pigmentsShort": "Single-pigment colors",
-    "repairMedium": "Watercolor Repair Medium",
-    "auxiliaryMedium": "Auxiliary Painting Medium",
-    "watercolorSet": "Watercolor Set",
+    "pigmentsShort": "Tubes and pans",
+    "repairMedium": "Film masking",
+    "auxiliaryMedium": "Painting mediums",
+    "watercolorSet": "Metal-box sets",
     "mediumSet": "Medium Set"
   },
   "shop": {
     "title": "Shop",
-    "subtitle": "Browse the full Sinours collection. No purchase here — find an authorized agent to order.",
+    "subtitle": "The current Sinours range. This site does not list prices and does not sell direct — order through an authorized agent.",
     "filters": "Filters",
     "category": "Category",
     "color": "Color",
@@ -78,41 +78,50 @@
   },
   "product": {
     "specifications": "Specifications",
-    "colorPowder": "Color Powder",
-    "lightResistance": "Lightfastness",
-    "transparency": "Transparency",
-    "particleRegularity": "Particle Regularity",
-    "coverage": "Coverage",
     "series": "Series",
-    "pigmentIndex": "Pigment Index",
-    "findAgentToOrder": "This product is available through authorized Sinours agents.",
-    "relatedProducts": "Related Products"
+    "pigmentIndex": "Pigment index",
+    "formatsTitle": "Available formats",
+    "formatsNote": "The same colour is packed in more than one size. Ask an agent for the SKU you need. Prices are not listed here.",
+    "format": "Format",
+    "size": "Size",
+    "sku": "SKU",
+    "format_tube": "Tube",
+    "format_fullPan": "Full pan",
+    "format_halfPan": "Half pan",
+    "format_set": "Set",
+    "format_bottle": "Bottle",
+    "findAgentToOrder": "Available through authorized Sinours agents. This page does not sell or show a price.",
+    "relatedProducts": "Related colours"
   },
   "about": {
     "title": "About Sinours",
-    "subtitle": "A watercolor house built on pigment science and a love of the craft.",
-    "companyTitle": "The Company",
-    "companyBody": "Sinours is a watercolor manufacturer dedicated to the materials of painting. We mill our own pigment powders, formulate our own binders and mediums, and publish the technical data behind every color we make. Our work serves studio artists, illustrators, and educators who want predictable, archival results.",
-    "valuesTitle": "What we care about",
+    "subtitle": "Professional watercolour, researched and developed in Hebei, China.",
+    "companyTitle": "The laboratory",
+    "companyBody": "Sinours is the professional watercolour line of ARTAGER group. The colours are researched and developed at the Sinours laboratory in Hebei, China, and made in China. The current range is 36 numbered colours, each sold as a 15 ml tube, a 3.8 ml full pan, and a 1.8 ml half pan, together with metal-box sets and mediums: ox gall, film masking, gum arabic, and white ink. Sinours does not sell from this website. Artists and shops order through authorized agents.",
+    "valuesTitle": "How the range is organised",
     "values": {
       "pigment": {
-        "title": "Pigment first",
-        "body": "We name and index every pigment we use. No mystery blends, no shortcuts."
+        "title": "A number on every colour",
+        "body": "Each colour has a three-digit code and a series, printed on the tube and the pan. Where the pigment index is published, it is shown on the colour page."
       },
       "data": {
-        "title": "Published data",
-        "body": "Lightfastness, transparency, particle regularity and coverage are printed on every product page."
+        "title": "Three formats",
+        "body": "Tube, full pan, and half pan share one colour number. The product page lists the size and the SKU for each, and nothing else."
       },
       "archive": {
-        "title": "Built to last",
-        "body": "Tested for lightfastness so a painting made today reads the same in a hundred years."
+        "title": "Sold through agents",
+        "body": "There is no cart and no price list. Find an agent, or write to the laboratory, to order."
       }
     }
   },
   "contact": {
     "title": "Contact",
-    "subtitle": "Reach the Sinours team or find an agent near you.",
-    "enterpriseTitle": "Enterprise Contact",
+    "subtitle": "The laboratory is in Hebei, China. For a local order, use an authorized agent.",
+    "enterpriseTitle": "Laboratory",
+    "phoneValue": "+86 316 832 1001",
+    "addressValue": "Sinours Laboratory, Hebei, China",
+    "instagramLabel": "Instagram",
+    "instagramValue": "@sinours.art",
     "agentTitle": "Agent Directory",
     "formTitle": "Send us a message",
     "formName": "Your name",
@@ -121,33 +130,33 @@
     "formMessage": "Message",
     "formSend": "Send Message",
     "formSuccess": "Thanks — your message has been received. We'll reply shortly.",
-    "formError": "Something went wrong. Please try again or email us directly.",
+    "formError": "Something went wrong. Please try again.",
     "emailLabel": "Email",
     "phoneLabel": "Phone",
     "addressLabel": "Address",
     "hoursLabel": "Hours",
-    "hoursValue": "Mon–Fri, 9:00–18:00 (GMT+8)"
+    "hoursValue": ""
   },
   "agents": {
     "title": "Find an Agent",
-    "subtitle": "Sinours is sold through a network of authorized agents. Reach one directly to order or ask about availability.",
+    "subtitle": "Sinours is sold through authorized agents. The laboratory in Hebei can connect you, and WatercolorLK carries the range in Sri Lanka.",
     "all": "All regions",
     "region": "Region",
     "contact": "Contact",
     "email": "Email",
     "phone": "Phone",
-    "becomeAgent": "Become an Agent",
-    "becomeAgentBody": "Interested in representing Sinours in your region? We're growing our network. Get in touch and we'll start the conversation."
+    "becomeAgent": "Represent Sinours",
+    "becomeAgentBody": "To carry Sinours in your region, write to the laboratory. Tell us where you are and how you would like to work together."
   },
   "footer": {
-    "tagline": "Color, ground for the modern painter.",
+    "tagline": "Professional watercolour from Hebei, China.",
     "shopCol": "Shop",
     "companyCol": "Company",
     "supportCol": "Support",
     "rights": "All rights reserved.",
     "privacy": "Privacy",
     "terms": "Terms",
-    "madeWith": "Made for painters."
+    "madeWith": "Researched and made in China."
   },
   "theme": {
     "toggle": "Toggle theme",

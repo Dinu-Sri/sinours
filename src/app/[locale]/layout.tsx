@@ -36,8 +36,8 @@ export async function generateMetadata({
     },
     description:
       locale === "zh"
-        ? "Sinours 水彩 — 为当代画家研磨的颜料与媒介剂。"
-        : "Sinours Watercolor — finely milled pigments and mediums for the modern painter.",
+        ? "Sinours 水彩 — 中国河北研发制造的专业水彩。本站不标价，请通过授权代理订购。"
+        : "Sinours Watercolor — professional watercolour researched and made in Hebei, China. No prices; order through an authorized agent.",
     metadataBase: new URL(
       process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000",
     ),

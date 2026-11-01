@@ -1,6 +1,7 @@
 node_modules
 .next
 .git
+new raw data pack for review
 .gitignore
 Dockerfile
 .dockerignore

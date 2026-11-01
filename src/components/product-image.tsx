@@ -1,63 +1,49 @@
-import { COLOR_HEX, type PigmentColor } from "@/lib/colors";
 import { cn } from "@/lib/utils";
 
 /**
- * Placeholder product visual. Renders a clean monochrome tile tinted by the
- * product's color family (for pigments) or neutral (for mediums/sets).
- *
- * When real photography lands, swap this for next/image with the Product.image
- * path and keep this as the fallback for missing images.
+ * Product visual. Colour charts and studio photographs live in /public.
+ * A missing file falls back to the colour name, never a dashed demo tile.
  */
 export function ProductImage({
-  colorFamily,
-  category,
+  image,
   name,
   className,
-  size = "md",
 }: {
-  colorFamily?: string | null;
-  category: "PIGMENT" | "MEDIUM" | "SET";
+  image?: string | null;
   name: string;
   className?: string;
+  colorFamily?: string | null;
+  category?: "PIGMENT" | "MEDIUM" | "SET";
   size?: "sm" | "md" | "lg";
 }) {
-  const hex =
-    colorFamily && colorFamily in COLOR_HEX
-      ? COLOR_HEX[colorFamily as PigmentColor]
-      : "#1c1c1c";
-
-  const labelSize =
-    size === "lg" ? "text-2xl" : size === "sm" ? "text-xs" : "text-sm";
+  if (image) {
+    return (
+      <div
+        className={cn(
+          "relative aspect-[3/2] w-full overflow-hidden bg-[#f7f6f3]",
+          className,
+        )}
+      >
+        <img
+          src={image}
+          alt={name}
+          className="h-full w-full object-contain"
+        />
+      </div>
+    );
+  }
 
   return (
     <div
       className={cn(
-        "relative flex aspect-[4/5] w-full items-end overflow-hidden rounded-lg border border-border",
+        "flex aspect-[3/2] w-full items-end bg-foreground text-background",
         className,
       )}
-      style={{ backgroundColor: hex }}
       role="img"
       aria-label={name}
     >
-      {/* Subtle paper grain via layered gradient */}
-      <div
-        className="absolute inset-0 opacity-60"
-        style={{
-          background:
-            "radial-gradient(120% 80% at 50% 0%, rgba(255,255,255,0.35), rgba(0,0,0,0.18))",
-        }}
-      />
-      <span
-        className={cn(
-          "relative m-3 inline-block max-w-[80%] rounded bg-background/80 px-2 py-1 font-medium uppercase tracking-wide text-foreground backdrop-blur-sm",
-          labelSize,
-        )}
-      >
-        {category === "PIGMENT"
-          ? name
-          : category === "MEDIUM"
-            ? "MEDIUM"
-            : "SET"}
+      <span className="m-4 text-sm font-medium uppercase tracking-wide">
+        {name}
       </span>
     </div>
   );
